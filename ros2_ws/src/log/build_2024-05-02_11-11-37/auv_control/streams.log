@@ -1,0 +1,252 @@
+[0.005s] Invoking command in '/home/kyo/ros2_ws/src/build/auv_control': AMENT_PREFIX_PATH=/home/kyo/ros2_ws/src/install/thruster_manager:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kyo/ros2_ws/src/install/thruster_manager:/opt/ros/humble LD_LIBRARY_PATH=/home/kyo/ros2_ws/src/install/thruster_manager/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/kyo/ros2_ws/src/auv_control -DCMAKE_INSTALL_PREFIX=/home/kyo/ros2_ws/src/install/auv_control
+[0.011s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.077s] -- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+[0.093s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.094s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.097s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.103s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.111s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.143s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.144s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.208s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.296s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.320s] -- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.368s] -- Found nav_msgs: 4.2.3 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.417s] -- Found tf2_ros: 0.25.6 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.604s] -- Found urdf: 2.6.0 (/opt/ros/humble/share/urdf/cmake)
+[0.615s] -- Found thruster_manager: 0.1.0 (/home/kyo/ros2_ws/src/install/thruster_manager/share/thruster_manager/cmake)
+[0.646s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.793s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.960s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.023s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.046s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.047s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.066s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.066s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.066s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.066s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.080s] -- Found PythonExtra: .so  
+[1.108s] -- Configuring done
+[1.135s] -- Generating done
+[1.137s] -- Build files have been written to: /home/kyo/ros2_ws/src/build/auv_control
+[1.143s] Invoked command in '/home/kyo/ros2_ws/src/build/auv_control' returned '0': AMENT_PREFIX_PATH=/home/kyo/ros2_ws/src/install/thruster_manager:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kyo/ros2_ws/src/install/thruster_manager:/opt/ros/humble LD_LIBRARY_PATH=/home/kyo/ros2_ws/src/install/thruster_manager/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/kyo/ros2_ws/src/auv_control -DCMAKE_INSTALL_PREFIX=/home/kyo/ros2_ws/src/install/auv_control
+[1.144s] Invoking command in '/home/kyo/ros2_ws/src/build/auv_control': AMENT_PREFIX_PATH=/home/kyo/ros2_ws/src/install/thruster_manager:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kyo/ros2_ws/src/install/thruster_manager:/opt/ros/humble LD_LIBRARY_PATH=/home/kyo/ros2_ws/src/install/thruster_manager/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/kyo/ros2_ws/src/build/auv_control -- -j20 -l20
+[1.168s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.172s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.176s] [  5%] Built target ament_cmake_python_copy_auv_control
+[1.339s] running egg_info
+[1.340s] creating auv_control.egg-info
+[1.340s] writing auv_control.egg-info/PKG-INFO
+[1.340s] writing dependency_links to auv_control.egg-info/dependency_links.txt
+[1.340s] writing top-level names to auv_control.egg-info/top_level.txt
+[1.340s] writing manifest file 'auv_control.egg-info/SOURCES.txt'
+[1.342s] reading manifest file 'auv_control.egg-info/SOURCES.txt'
+[1.342s] writing manifest file 'auv_control.egg-info/SOURCES.txt'
+[1.355s] [  5%] Built target auv_control__cpp
+[1.361s] [  7%] [32mBuilding C object CMakeFiles/auv_control__rosidl_generator_c.dir/rosidl_generator_c/auv_control/srv/detail/control__functions.c.o[0m
+[1.361s] [ 10%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.361s] [ 12%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.362s] [ 15%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.363s] [ 15%] Built target ament_cmake_python_build_auv_control_egg
+[1.403s] [ 17%] [32m[1mLinking C shared library libauv_control__rosidl_generator_c.so[0m
+[1.431s] [ 17%] Built target auv_control__rosidl_generator_c
+[1.437s] [ 20%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[1.438s] [ 25%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.438s] [ 25%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.572s] [ 28%] [32mBuilding CXX object CMakeFiles/auv_control__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auv_control/srv/control__type_support.cpp.o[0m
+[1.588s] [ 30%] [32mBuilding CXX object CMakeFiles/auv_control__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auv_control/srv/detail/control__type_support.cpp.o[0m
+[1.602s] [ 33%] [32mBuilding CXX object CMakeFiles/auv_control__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auv_control/srv/detail/dds_fastrtps/control__type_support.cpp.o[0m
+[1.666s] [ 35%] [32mBuilding CXX object CMakeFiles/auv_control__rosidl_typesupport_c.dir/rosidl_typesupport_c/auv_control/srv/control__type_support.cpp.o[0m
+[1.691s] [ 38%] [32m[1mLinking CXX shared library libauv_control__rosidl_typesupport_c.so[0m
+[1.694s] [ 41%] [32mBuilding CXX object CMakeFiles/auv_control__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auv_control/srv/detail/control__type_support_c.cpp.o[0m
+[1.698s] [ 43%] [32mBuilding C object CMakeFiles/auv_control__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auv_control/srv/detail/control__type_support.c.o[0m
+[1.725s] [ 43%] Built target auv_control__rosidl_typesupport_c
+[1.727s] [ 46%] [32m[1mLinking C shared library libauv_control__rosidl_typesupport_introspection_c.so[0m
+[1.751s] [ 46%] Built target auv_control__rosidl_typesupport_introspection_c
+[1.793s] [ 48%] [32m[1mLinking CXX shared library libauv_control__rosidl_typesupport_cpp.so[0m
+[1.822s] [ 48%] Built target auv_control__rosidl_typesupport_cpp
+[1.836s] [ 51%] [32mBuilding CXX object CMakeFiles/control_common.dir/src/controller_io.cpp.o[0m
+[1.837s] [ 53%] [32mBuilding CXX object CMakeFiles/control_common.dir/src/hydrodynamics.cpp.o[0m
+[1.880s] [ 56%] [32m[1mLinking CXX shared library libauv_control__rosidl_typesupport_introspection_cpp.so[0m
+[1.910s] [ 56%] Built target auv_control__rosidl_typesupport_introspection_cpp
+[1.924s] [ 58%] [32m[1mLinking CXX shared library libauv_control__rosidl_typesupport_fastrtps_cpp.so[0m
+[1.950s] [ 61%] [32m[1mLinking CXX shared library libauv_control__rosidl_typesupport_fastrtps_c.so[0m
+[1.985s] [ 61%] Built target auv_control__rosidl_typesupport_fastrtps_cpp
+[2.009s] [ 61%] Built target auv_control__rosidl_typesupport_fastrtps_c
+[2.022s] [ 61%] Built target auv_control
+[2.034s] [ 64%] [34m[1mGenerating Python code for ROS interfaces[0m
+[2.278s] [ 64%] Built target auv_control__py
+[2.290s] [ 66%] [32mBuilding C object CMakeFiles/auv_control__rosidl_generator_py.dir/rosidl_generator_py/auv_control/srv/_control_s.c.o[0m
+[2.367s] [ 69%] [32m[1mLinking C shared library rosidl_generator_py/auv_control/libauv_control__rosidl_generator_py.so[0m
+[2.393s] [ 69%] Built target auv_control__rosidl_generator_py
+[2.405s] [ 76%] [32mBuilding C object CMakeFiles/auv_control__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/auv_control/_auv_control_s.ep.rosidl_typesupport_c.c.o[0m
+[2.405s] [ 76%] [32mBuilding C object CMakeFiles/auv_control__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/auv_control/_auv_control_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[2.405s] [ 76%] [32mBuilding C object CMakeFiles/auv_control__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/auv_control/_auv_control_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[2.477s] [ 79%] [32m[1mLinking C shared library rosidl_generator_py/auv_control/auv_control_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.477s] [ 82%] [32m[1mLinking C shared library rosidl_generator_py/auv_control/auv_control_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.478s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/auv_control/auv_control_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.502s] [ 84%] Built target auv_control__rosidl_typesupport_introspection_c__pyext
+[2.502s] [ 84%] Built target auv_control__rosidl_typesupport_c__pyext
+[2.503s] [ 84%] Built target auv_control__rosidl_typesupport_fastrtps_c__pyext
+[15.131s] [ 87%] [32m[1mLinking CXX shared library libcontrol_common.so[0m
+[16.066s] [ 87%] Built target control_common
+[16.078s] [ 92%] [32mBuilding CXX object CMakeFiles/cascaded_pid.dir/src/cascaded_pid.cpp.o[0m
+[16.078s] [ 92%] [32mBuilding CXX object CMakeFiles/sliding_mode.dir/src/sliding_mode.cpp.o[0m
+[16.078s] [ 94%] [32mBuilding CXX object CMakeFiles/cascaded_pid.dir/src/pos_vel_pid.cpp.o[0m
+[19.962s] [ 97%] [32m[1mLinking CXX executable sliding_mode[0m
+[19.971s] [100%] [32m[1mLinking CXX executable cascaded_pid[0m
+[20.529s] [100%] Built target sliding_mode
+[20.603s] [100%] Built target cascaded_pid
+[20.612s] Invoked command in '/home/kyo/ros2_ws/src/build/auv_control' returned '0': AMENT_PREFIX_PATH=/home/kyo/ros2_ws/src/install/thruster_manager:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kyo/ros2_ws/src/install/thruster_manager:/opt/ros/humble LD_LIBRARY_PATH=/home/kyo/ros2_ws/src/install/thruster_manager/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/kyo/ros2_ws/src/build/auv_control -- -j20 -l20
+[20.656s] Invoking command in '/home/kyo/ros2_ws/src/build/auv_control': AMENT_PREFIX_PATH=/home/kyo/ros2_ws/src/install/thruster_manager:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kyo/ros2_ws/src/install/thruster_manager:/opt/ros/humble LD_LIBRARY_PATH=/home/kyo/ros2_ws/src/install/thruster_manager/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/kyo/ros2_ws/src/build/auv_control
+[20.663s] -- Install configuration: ""
+[20.663s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/ament_index/resource_index/rosidl_interfaces/auv_control
+[20.663s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/include/auv_control/auv_control
+[20.663s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/include/auv_control/auv_control/msg
+[20.663s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/include/auv_control/auv_control/msg/rosidl_generator_c__visibility_control.h
+[20.663s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/include/auv_control/auv_control/srv
+[20.663s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/include/auv_control/auv_control/srv/control.h
+[20.663s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/include/auv_control/auv_control/srv/detail
+[20.663s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/include/auv_control/auv_control/srv/detail/control__functions.h
+[20.663s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/include/auv_control/auv_control/srv/detail/control__functions.c
+[20.663s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/include/auv_control/auv_control/srv/detail/control__struct.h
+[20.663s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/include/auv_control/auv_control/srv/detail/control__type_support.h
+[20.663s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/environment/library_path.sh
+[20.664s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/environment/library_path.dsv
+[20.664s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/lib/libauv_control__rosidl_generator_c.so
+[20.664s] -- Set runtime path of "/home/kyo/ros2_ws/src/install/auv_control/lib/libauv_control__rosidl_generator_c.so" to ""
+[20.664s] -- Up-to-date: /home/kyo/ros2_ws/src/install/auv_control/include/auv_control/auv_control
+[20.664s] -- Up-to-date: /home/kyo/ros2_ws/src/install/auv_control/include/auv_control/auv_control/msg
+[20.664s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/include/auv_control/auv_control/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[20.664s] -- Up-to-date: /home/kyo/ros2_ws/src/install/auv_control/include/auv_control/auv_control/srv
+[20.664s] -- Up-to-date: /home/kyo/ros2_ws/src/install/auv_control/include/auv_control/auv_control/srv/detail
+[20.664s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/include/auv_control/auv_control/srv/detail/control__rosidl_typesupport_fastrtps_c.h
+[20.664s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/lib/libauv_control__rosidl_typesupport_fastrtps_c.so
+[20.664s] -- Set runtime path of "/home/kyo/ros2_ws/src/install/auv_control/lib/libauv_control__rosidl_typesupport_fastrtps_c.so" to ""
+[20.664s] -- Up-to-date: /home/kyo/ros2_ws/src/install/auv_control/include/auv_control/auv_control
+[20.664s] -- Up-to-date: /home/kyo/ros2_ws/src/install/auv_control/include/auv_control/auv_control/srv
+[20.664s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/include/auv_control/auv_control/srv/control.hpp
+[20.664s] -- Up-to-date: /home/kyo/ros2_ws/src/install/auv_control/include/auv_control/auv_control/srv/detail
+[20.664s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/include/auv_control/auv_control/srv/detail/control__traits.hpp
+[20.664s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/include/auv_control/auv_control/srv/detail/control__struct.hpp
+[20.664s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/include/auv_control/auv_control/srv/detail/control__builder.hpp
+[20.665s] -- Up-to-date: /home/kyo/ros2_ws/src/install/auv_control/include/auv_control/auv_control
+[20.665s] -- Up-to-date: /home/kyo/ros2_ws/src/install/auv_control/include/auv_control/auv_control/msg
+[20.665s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/include/auv_control/auv_control/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[20.665s] -- Up-to-date: /home/kyo/ros2_ws/src/install/auv_control/include/auv_control/auv_control/srv
+[20.665s] -- Up-to-date: /home/kyo/ros2_ws/src/install/auv_control/include/auv_control/auv_control/srv/detail
+[20.665s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/include/auv_control/auv_control/srv/detail/dds_fastrtps
+[20.665s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/include/auv_control/auv_control/srv/detail/control__rosidl_typesupport_fastrtps_cpp.hpp
+[20.665s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/lib/libauv_control__rosidl_typesupport_fastrtps_cpp.so
+[20.665s] -- Set runtime path of "/home/kyo/ros2_ws/src/install/auv_control/lib/libauv_control__rosidl_typesupport_fastrtps_cpp.so" to ""
+[20.665s] -- Up-to-date: /home/kyo/ros2_ws/src/install/auv_control/include/auv_control/auv_control
+[20.665s] -- Up-to-date: /home/kyo/ros2_ws/src/install/auv_control/include/auv_control/auv_control/msg
+[20.665s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/include/auv_control/auv_control/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[20.665s] -- Up-to-date: /home/kyo/ros2_ws/src/install/auv_control/include/auv_control/auv_control/srv
+[20.665s] -- Up-to-date: /home/kyo/ros2_ws/src/install/auv_control/include/auv_control/auv_control/srv/detail
+[20.665s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/include/auv_control/auv_control/srv/detail/control__type_support.c
+[20.665s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/include/auv_control/auv_control/srv/detail/control__rosidl_typesupport_introspection_c.h
+[20.665s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/lib/libauv_control__rosidl_typesupport_introspection_c.so
+[20.665s] -- Set runtime path of "/home/kyo/ros2_ws/src/install/auv_control/lib/libauv_control__rosidl_typesupport_introspection_c.so" to ""
+[20.665s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/lib/libauv_control__rosidl_typesupport_c.so
+[20.665s] -- Set runtime path of "/home/kyo/ros2_ws/src/install/auv_control/lib/libauv_control__rosidl_typesupport_c.so" to ""
+[20.666s] -- Up-to-date: /home/kyo/ros2_ws/src/install/auv_control/include/auv_control/auv_control
+[20.666s] -- Up-to-date: /home/kyo/ros2_ws/src/install/auv_control/include/auv_control/auv_control/srv
+[20.666s] -- Up-to-date: /home/kyo/ros2_ws/src/install/auv_control/include/auv_control/auv_control/srv/detail
+[20.666s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/include/auv_control/auv_control/srv/detail/control__rosidl_typesupport_introspection_cpp.hpp
+[20.666s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/include/auv_control/auv_control/srv/detail/control__type_support.cpp
+[20.666s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/lib/libauv_control__rosidl_typesupport_introspection_cpp.so
+[20.666s] -- Set runtime path of "/home/kyo/ros2_ws/src/install/auv_control/lib/libauv_control__rosidl_typesupport_introspection_cpp.so" to ""
+[20.666s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/lib/libauv_control__rosidl_typesupport_cpp.so
+[20.666s] -- Set runtime path of "/home/kyo/ros2_ws/src/install/auv_control/lib/libauv_control__rosidl_typesupport_cpp.so" to ""
+[20.666s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/environment/pythonpath.sh
+[20.666s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/environment/pythonpath.dsv
+[20.666s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/local/lib/python3.10/dist-packages/auv_control-0.0.1-py3.10.egg-info
+[20.666s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/local/lib/python3.10/dist-packages/auv_control-0.0.1-py3.10.egg-info/dependency_links.txt
+[20.666s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/local/lib/python3.10/dist-packages/auv_control-0.0.1-py3.10.egg-info/top_level.txt
+[20.666s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/local/lib/python3.10/dist-packages/auv_control-0.0.1-py3.10.egg-info/SOURCES.txt
+[20.666s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/local/lib/python3.10/dist-packages/auv_control-0.0.1-py3.10.egg-info/PKG-INFO
+[20.667s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/local/lib/python3.10/dist-packages/auv_control
+[20.667s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/local/lib/python3.10/dist-packages/auv_control/_auv_control_s.ep.rosidl_typesupport_c.c
+[20.667s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/local/lib/python3.10/dist-packages/auv_control/libauv_control__rosidl_generator_py.so
+[20.667s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/local/lib/python3.10/dist-packages/auv_control/auv_control_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[20.667s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/local/lib/python3.10/dist-packages/auv_control/auv_control_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[20.667s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/local/lib/python3.10/dist-packages/auv_control/_auv_control_s.ep.rosidl_typesupport_fastrtps_c.c
+[20.667s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/local/lib/python3.10/dist-packages/auv_control/_auv_control_s.ep.rosidl_typesupport_introspection_c.c
+[20.667s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/local/lib/python3.10/dist-packages/auv_control/srv
+[20.667s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/local/lib/python3.10/dist-packages/auv_control/srv/_control_s.c
+[20.667s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/local/lib/python3.10/dist-packages/auv_control/srv/_control.py
+[20.667s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/local/lib/python3.10/dist-packages/auv_control/srv/__init__.py
+[20.667s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/local/lib/python3.10/dist-packages/auv_control/auv_control_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[20.667s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/local/lib/python3.10/dist-packages/auv_control/__init__.py
+[20.696s] Listing '/home/kyo/ros2_ws/src/install/auv_control/local/lib/python3.10/dist-packages/auv_control'...
+[20.696s] Compiling '/home/kyo/ros2_ws/src/install/auv_control/local/lib/python3.10/dist-packages/auv_control/__init__.py'...
+[20.696s] Listing '/home/kyo/ros2_ws/src/install/auv_control/local/lib/python3.10/dist-packages/auv_control/srv'...
+[20.696s] Compiling '/home/kyo/ros2_ws/src/install/auv_control/local/lib/python3.10/dist-packages/auv_control/srv/__init__.py'...
+[20.696s] Compiling '/home/kyo/ros2_ws/src/install/auv_control/local/lib/python3.10/dist-packages/auv_control/srv/_control.py'...
+[20.701s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/local/lib/python3.10/dist-packages/auv_control/auv_control_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[20.701s] -- Set runtime path of "/home/kyo/ros2_ws/src/install/auv_control/local/lib/python3.10/dist-packages/auv_control/auv_control_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[20.701s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/local/lib/python3.10/dist-packages/auv_control/auv_control_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[20.701s] -- Set runtime path of "/home/kyo/ros2_ws/src/install/auv_control/local/lib/python3.10/dist-packages/auv_control/auv_control_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[20.701s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/local/lib/python3.10/dist-packages/auv_control/auv_control_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[20.701s] -- Set runtime path of "/home/kyo/ros2_ws/src/install/auv_control/local/lib/python3.10/dist-packages/auv_control/auv_control_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[20.701s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/lib/libauv_control__rosidl_generator_py.so
+[20.702s] -- Set runtime path of "/home/kyo/ros2_ws/src/install/auv_control/lib/libauv_control__rosidl_generator_py.so" to ""
+[20.702s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/srv/Control.idl
+[20.702s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/srv/Control.srv
+[20.702s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/srv/Control_Request.msg
+[20.702s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/srv/Control_Response.msg
+[20.702s] -- Up-to-date: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/environment/library_path.sh
+[20.702s] -- Up-to-date: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/environment/library_path.dsv
+[20.702s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/lib/libcontrol_common.so
+[20.713s] -- Set runtime path of "/home/kyo/ros2_ws/src/install/auv_control/lib/libcontrol_common.so" to ""
+[20.713s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/lib/auv_control/cascaded_pid
+[20.714s] -- Set runtime path of "/home/kyo/ros2_ws/src/install/auv_control/lib/auv_control/cascaded_pid" to ""
+[20.714s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/lib/auv_control/sliding_mode
+[20.714s] -- Set runtime path of "/home/kyo/ros2_ws/src/install/auv_control/lib/auv_control/sliding_mode" to ""
+[20.714s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/launch
+[20.714s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/launch/vel_setpoint.yaml
+[20.715s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/launch/pose_setpoint.yaml
+[20.715s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/launch/wrench_launch.py
+[20.715s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/launch/wrench.yaml
+[20.715s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/launch/pose_launch.py
+[20.715s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/ament_index/resource_index/package_run_dependencies/auv_control
+[20.715s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/ament_index/resource_index/parent_prefix_path/auv_control
+[20.715s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/environment/ament_prefix_path.sh
+[20.715s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/environment/ament_prefix_path.dsv
+[20.715s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/environment/path.sh
+[20.715s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/environment/path.dsv
+[20.715s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/local_setup.bash
+[20.715s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/local_setup.sh
+[20.715s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/local_setup.zsh
+[20.715s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/local_setup.dsv
+[20.715s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/package.dsv
+[20.715s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/ament_index/resource_index/packages/auv_control
+[20.715s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/cmake/export_auv_control__rosidl_generator_cExport.cmake
+[20.715s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/cmake/export_auv_control__rosidl_generator_cExport-noconfig.cmake
+[20.715s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/cmake/export_auv_control__rosidl_typesupport_fastrtps_cExport.cmake
+[20.715s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/cmake/export_auv_control__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[20.716s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/cmake/export_auv_control__rosidl_generator_cppExport.cmake
+[20.716s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/cmake/export_auv_control__rosidl_typesupport_fastrtps_cppExport.cmake
+[20.716s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/cmake/export_auv_control__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[20.716s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/cmake/auv_control__rosidl_typesupport_introspection_cExport.cmake
+[20.716s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/cmake/auv_control__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[20.716s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/cmake/auv_control__rosidl_typesupport_cExport.cmake
+[20.716s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/cmake/auv_control__rosidl_typesupport_cExport-noconfig.cmake
+[20.716s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/cmake/auv_control__rosidl_typesupport_introspection_cppExport.cmake
+[20.716s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/cmake/auv_control__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[20.716s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/cmake/auv_control__rosidl_typesupport_cppExport.cmake
+[20.716s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/cmake/auv_control__rosidl_typesupport_cppExport-noconfig.cmake
+[20.716s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/cmake/export_auv_control__rosidl_generator_pyExport.cmake
+[20.716s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/cmake/export_auv_control__rosidl_generator_pyExport-noconfig.cmake
+[20.716s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/cmake/rosidl_cmake-extras.cmake
+[20.716s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/cmake/ament_cmake_export_include_directories-extras.cmake
+[20.716s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/cmake/ament_cmake_export_libraries-extras.cmake
+[20.716s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/cmake/ament_cmake_export_targets-extras.cmake
+[20.716s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[20.716s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/cmake/ament_cmake_export_dependencies-extras.cmake
+[20.717s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[20.717s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/cmake/auv_controlConfig.cmake
+[20.717s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/cmake/auv_controlConfig-version.cmake
+[20.717s] -- Installing: /home/kyo/ros2_ws/src/install/auv_control/share/auv_control/package.xml
+[20.719s] Invoked command in '/home/kyo/ros2_ws/src/build/auv_control' returned '0': AMENT_PREFIX_PATH=/home/kyo/ros2_ws/src/install/thruster_manager:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kyo/ros2_ws/src/install/thruster_manager:/opt/ros/humble LD_LIBRARY_PATH=/home/kyo/ros2_ws/src/install/thruster_manager/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/kyo/ros2_ws/src/build/auv_control

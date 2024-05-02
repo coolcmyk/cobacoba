@@ -1,0 +1,274 @@
+[0.049s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.049s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=20, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fea68cfc9d0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fea68cfc3d0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fea68cfc3d0>>)
+[0.122s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.122s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.122s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.122s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.122s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.122s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.122s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/kyo/ros2_ws/src'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.122s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(auv_control) by extensions ['ignore', 'ignore_ament_install']
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(auv_control) by extension 'ignore'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(auv_control) by extension 'ignore_ament_install'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(auv_control) by extensions ['colcon_pkg']
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(auv_control) by extension 'colcon_pkg'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(auv_control) by extensions ['colcon_meta']
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(auv_control) by extension 'colcon_meta'
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(auv_control) by extensions ['ros']
+[0.131s] Level 1:colcon.colcon_core.package_identification:_identify(auv_control) by extension 'ros'
+[0.133s] DEBUG:colcon.colcon_core.package_identification:Package 'auv_control' with type 'ros.ament_cmake' and name 'auv_control'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(pose_to_tf) by extensions ['ignore', 'ignore_ament_install']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(pose_to_tf) by extension 'ignore'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(pose_to_tf) by extension 'ignore_ament_install'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(pose_to_tf) by extensions ['colcon_pkg']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(pose_to_tf) by extension 'colcon_pkg'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(pose_to_tf) by extensions ['colcon_meta']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(pose_to_tf) by extension 'colcon_meta'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(pose_to_tf) by extensions ['ros']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(pose_to_tf) by extension 'ros'
+[0.134s] DEBUG:colcon.colcon_core.package_identification:Package 'pose_to_tf' with type 'ros.ament_cmake' and name 'pose_to_tf'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(thruster_manager) by extensions ['ignore', 'ignore_ament_install']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(thruster_manager) by extension 'ignore'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(thruster_manager) by extension 'ignore_ament_install'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(thruster_manager) by extensions ['colcon_pkg']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(thruster_manager) by extension 'colcon_pkg'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(thruster_manager) by extensions ['colcon_meta']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(thruster_manager) by extension 'colcon_meta'
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(thruster_manager) by extensions ['ros']
+[0.134s] Level 1:colcon.colcon_core.package_identification:_identify(thruster_manager) by extension 'ros'
+[0.134s] DEBUG:colcon.colcon_core.package_identification:Package 'thruster_manager' with type 'ros.ament_cmake' and name 'thruster_manager'
+[0.134s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.134s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.134s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.134s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.134s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.145s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.145s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.150s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 286 installed packages in /opt/ros/humble
+[0.151s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'pose_to_tf' build argument 'cmake_args' from command line to 'None'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'pose_to_tf' build argument 'cmake_target' from command line to 'None'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'pose_to_tf' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'pose_to_tf' build argument 'cmake_clean_cache' from command line to 'False'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'pose_to_tf' build argument 'cmake_clean_first' from command line to 'False'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'pose_to_tf' build argument 'cmake_force_configure' from command line to 'False'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'pose_to_tf' build argument 'ament_cmake_args' from command line to 'None'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'pose_to_tf' build argument 'catkin_cmake_args' from command line to 'None'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'pose_to_tf' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.168s] DEBUG:colcon.colcon_core.verb:Building package 'pose_to_tf' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kyo/ros2_ws/src/build/pose_to_tf', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kyo/ros2_ws/src/install/pose_to_tf', 'merge_install': False, 'path': '/home/kyo/ros2_ws/src/pose_to_tf', 'symlink_install': False, 'test_result_base': None}
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'thruster_manager' build argument 'cmake_args' from command line to 'None'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'thruster_manager' build argument 'cmake_target' from command line to 'None'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'thruster_manager' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'thruster_manager' build argument 'cmake_clean_cache' from command line to 'False'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'thruster_manager' build argument 'cmake_clean_first' from command line to 'False'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'thruster_manager' build argument 'cmake_force_configure' from command line to 'False'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'thruster_manager' build argument 'ament_cmake_args' from command line to 'None'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'thruster_manager' build argument 'catkin_cmake_args' from command line to 'None'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'thruster_manager' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.168s] DEBUG:colcon.colcon_core.verb:Building package 'thruster_manager' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kyo/ros2_ws/src/build/thruster_manager', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kyo/ros2_ws/src/install/thruster_manager', 'merge_install': False, 'path': '/home/kyo/ros2_ws/src/thruster_manager', 'symlink_install': False, 'test_result_base': None}
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'auv_control' build argument 'cmake_args' from command line to 'None'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'auv_control' build argument 'cmake_target' from command line to 'None'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'auv_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'auv_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'auv_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'auv_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'auv_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'auv_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.168s] Level 5:colcon.colcon_core.verb:set package 'auv_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.168s] DEBUG:colcon.colcon_core.verb:Building package 'auv_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kyo/ros2_ws/src/build/auv_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kyo/ros2_ws/src/install/auv_control', 'merge_install': False, 'path': '/home/kyo/ros2_ws/src/auv_control', 'symlink_install': False, 'test_result_base': None}
+[0.168s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.169s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.169s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kyo/ros2_ws/src/thruster_manager' with build type 'ament_cmake'
+[0.169s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kyo/ros2_ws/src/thruster_manager'
+[0.170s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.170s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.170s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.172s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kyo/ros2_ws/src/pose_to_tf' with build type 'ament_cmake'
+[0.172s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kyo/ros2_ws/src/pose_to_tf'
+[0.172s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.172s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.176s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kyo/ros2_ws/src/build/thruster_manager': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/kyo/ros2_ws/src/thruster_manager -DCMAKE_INSTALL_PREFIX=/home/kyo/ros2_ws/src/install/thruster_manager
+[0.178s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kyo/ros2_ws/src/build/pose_to_tf': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/kyo/ros2_ws/src/build/pose_to_tf -- -j20 -l20
+[1.263s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kyo/ros2_ws/src/build/thruster_manager' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/kyo/ros2_ws/src/thruster_manager -DCMAKE_INSTALL_PREFIX=/home/kyo/ros2_ws/src/install/thruster_manager
+[1.264s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kyo/ros2_ws/src/build/thruster_manager': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/kyo/ros2_ws/src/build/thruster_manager -- -j20 -l20
+[14.550s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kyo/ros2_ws/src/build/pose_to_tf' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/kyo/ros2_ws/src/build/pose_to_tf -- -j20 -l20
+[14.568s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kyo/ros2_ws/src/build/pose_to_tf': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/kyo/ros2_ws/src/build/pose_to_tf
+[14.580s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pose_to_tf)
+[14.580s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kyo/ros2_ws/src/build/pose_to_tf' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/kyo/ros2_ws/src/build/pose_to_tf
+[14.581s] Level 1:colcon.colcon_core.environment:checking '/home/kyo/ros2_ws/src/install/pose_to_tf' for CMake module files
+[14.582s] Level 1:colcon.colcon_core.environment:checking '/home/kyo/ros2_ws/src/install/pose_to_tf' for CMake config files
+[14.582s] Level 1:colcon.colcon_core.shell:create_environment_hook('pose_to_tf', 'cmake_prefix_path')
+[14.582s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kyo/ros2_ws/src/install/pose_to_tf/share/pose_to_tf/hook/cmake_prefix_path.ps1'
+[14.582s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kyo/ros2_ws/src/install/pose_to_tf/share/pose_to_tf/hook/cmake_prefix_path.dsv'
+[14.582s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kyo/ros2_ws/src/install/pose_to_tf/share/pose_to_tf/hook/cmake_prefix_path.sh'
+[14.583s] Level 1:colcon.colcon_core.environment:checking '/home/kyo/ros2_ws/src/install/pose_to_tf/lib'
+[14.583s] Level 1:colcon.colcon_core.environment:checking '/home/kyo/ros2_ws/src/install/pose_to_tf/bin'
+[14.583s] Level 1:colcon.colcon_core.environment:checking '/home/kyo/ros2_ws/src/install/pose_to_tf/lib/pkgconfig/pose_to_tf.pc'
+[14.583s] Level 1:colcon.colcon_core.environment:checking '/home/kyo/ros2_ws/src/install/pose_to_tf/lib/python3.10/site-packages'
+[14.583s] Level 1:colcon.colcon_core.environment:checking '/home/kyo/ros2_ws/src/install/pose_to_tf/bin'
+[14.583s] INFO:colcon.colcon_core.shell:Creating package script '/home/kyo/ros2_ws/src/install/pose_to_tf/share/pose_to_tf/package.ps1'
+[14.584s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kyo/ros2_ws/src/install/pose_to_tf/share/pose_to_tf/package.dsv'
+[14.584s] INFO:colcon.colcon_core.shell:Creating package script '/home/kyo/ros2_ws/src/install/pose_to_tf/share/pose_to_tf/package.sh'
+[14.585s] INFO:colcon.colcon_core.shell:Creating package script '/home/kyo/ros2_ws/src/install/pose_to_tf/share/pose_to_tf/package.bash'
+[14.585s] INFO:colcon.colcon_core.shell:Creating package script '/home/kyo/ros2_ws/src/install/pose_to_tf/share/pose_to_tf/package.zsh'
+[14.585s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kyo/ros2_ws/src/install/pose_to_tf/share/colcon-core/packages/pose_to_tf)
+[14.598s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pose_to_tf)
+[14.598s] Level 1:colcon.colcon_core.environment:checking '/home/kyo/ros2_ws/src/install/pose_to_tf' for CMake module files
+[14.598s] Level 1:colcon.colcon_core.environment:checking '/home/kyo/ros2_ws/src/install/pose_to_tf' for CMake config files
+[14.598s] Level 1:colcon.colcon_core.shell:create_environment_hook('pose_to_tf', 'cmake_prefix_path')
+[14.598s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kyo/ros2_ws/src/install/pose_to_tf/share/pose_to_tf/hook/cmake_prefix_path.ps1'
+[14.598s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kyo/ros2_ws/src/install/pose_to_tf/share/pose_to_tf/hook/cmake_prefix_path.dsv'
+[14.599s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kyo/ros2_ws/src/install/pose_to_tf/share/pose_to_tf/hook/cmake_prefix_path.sh'
+[14.599s] Level 1:colcon.colcon_core.environment:checking '/home/kyo/ros2_ws/src/install/pose_to_tf/lib'
+[14.599s] Level 1:colcon.colcon_core.environment:checking '/home/kyo/ros2_ws/src/install/pose_to_tf/bin'
+[14.599s] Level 1:colcon.colcon_core.environment:checking '/home/kyo/ros2_ws/src/install/pose_to_tf/lib/pkgconfig/pose_to_tf.pc'
+[14.599s] Level 1:colcon.colcon_core.environment:checking '/home/kyo/ros2_ws/src/install/pose_to_tf/lib/python3.10/site-packages'
+[14.599s] Level 1:colcon.colcon_core.environment:checking '/home/kyo/ros2_ws/src/install/pose_to_tf/bin'
+[14.599s] INFO:colcon.colcon_core.shell:Creating package script '/home/kyo/ros2_ws/src/install/pose_to_tf/share/pose_to_tf/package.ps1'
+[14.600s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kyo/ros2_ws/src/install/pose_to_tf/share/pose_to_tf/package.dsv'
+[14.600s] INFO:colcon.colcon_core.shell:Creating package script '/home/kyo/ros2_ws/src/install/pose_to_tf/share/pose_to_tf/package.sh'
+[14.600s] INFO:colcon.colcon_core.shell:Creating package script '/home/kyo/ros2_ws/src/install/pose_to_tf/share/pose_to_tf/package.bash'
+[14.600s] INFO:colcon.colcon_core.shell:Creating package script '/home/kyo/ros2_ws/src/install/pose_to_tf/share/pose_to_tf/package.zsh'
+[14.600s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kyo/ros2_ws/src/install/pose_to_tf/share/colcon-core/packages/pose_to_tf)
+[19.207s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kyo/ros2_ws/src/build/thruster_manager' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/kyo/ros2_ws/src/build/thruster_manager -- -j20 -l20
+[19.222s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kyo/ros2_ws/src/build/thruster_manager': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/kyo/ros2_ws/src/build/thruster_manager
+[19.239s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(thruster_manager)
+[19.239s] Level 1:colcon.colcon_core.environment:checking '/home/kyo/ros2_ws/src/install/thruster_manager' for CMake module files
+[19.239s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kyo/ros2_ws/src/build/thruster_manager' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/kyo/ros2_ws/src/build/thruster_manager
+[19.240s] Level 1:colcon.colcon_core.environment:checking '/home/kyo/ros2_ws/src/install/thruster_manager' for CMake config files
+[19.240s] Level 1:colcon.colcon_core.shell:create_environment_hook('thruster_manager', 'cmake_prefix_path')
+[19.240s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kyo/ros2_ws/src/install/thruster_manager/share/thruster_manager/hook/cmake_prefix_path.ps1'
+[19.240s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kyo/ros2_ws/src/install/thruster_manager/share/thruster_manager/hook/cmake_prefix_path.dsv'
+[19.240s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kyo/ros2_ws/src/install/thruster_manager/share/thruster_manager/hook/cmake_prefix_path.sh'
+[19.240s] Level 1:colcon.colcon_core.environment:checking '/home/kyo/ros2_ws/src/install/thruster_manager/lib'
+[19.241s] Level 1:colcon.colcon_core.shell:create_environment_hook('thruster_manager', 'ld_library_path_lib')
+[19.241s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kyo/ros2_ws/src/install/thruster_manager/share/thruster_manager/hook/ld_library_path_lib.ps1'
+[19.241s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kyo/ros2_ws/src/install/thruster_manager/share/thruster_manager/hook/ld_library_path_lib.dsv'
+[19.241s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kyo/ros2_ws/src/install/thruster_manager/share/thruster_manager/hook/ld_library_path_lib.sh'
+[19.241s] Level 1:colcon.colcon_core.environment:checking '/home/kyo/ros2_ws/src/install/thruster_manager/bin'
+[19.241s] Level 1:colcon.colcon_core.environment:checking '/home/kyo/ros2_ws/src/install/thruster_manager/lib/pkgconfig/thruster_manager.pc'
+[19.241s] Level 1:colcon.colcon_core.environment:checking '/home/kyo/ros2_ws/src/install/thruster_manager/lib/python3.10/site-packages'
+[19.241s] Level 1:colcon.colcon_core.environment:checking '/home/kyo/ros2_ws/src/install/thruster_manager/bin'
+[19.242s] INFO:colcon.colcon_core.shell:Creating package script '/home/kyo/ros2_ws/src/install/thruster_manager/share/thruster_manager/package.ps1'
+[19.242s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kyo/ros2_ws/src/install/thruster_manager/share/thruster_manager/package.dsv'
+[19.242s] INFO:colcon.colcon_core.shell:Creating package script '/home/kyo/ros2_ws/src/install/thruster_manager/share/thruster_manager/package.sh'
+[19.242s] INFO:colcon.colcon_core.shell:Creating package script '/home/kyo/ros2_ws/src/install/thruster_manager/share/thruster_manager/package.bash'
+[19.242s] INFO:colcon.colcon_core.shell:Creating package script '/home/kyo/ros2_ws/src/install/thruster_manager/share/thruster_manager/package.zsh'
+[19.242s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kyo/ros2_ws/src/install/thruster_manager/share/colcon-core/packages/thruster_manager)
+[19.256s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(thruster_manager)
+[19.256s] Level 1:colcon.colcon_core.environment:checking '/home/kyo/ros2_ws/src/install/thruster_manager' for CMake module files
+[19.256s] Level 1:colcon.colcon_core.environment:checking '/home/kyo/ros2_ws/src/install/thruster_manager' for CMake config files
+[19.257s] Level 1:colcon.colcon_core.shell:create_environment_hook('thruster_manager', 'cmake_prefix_path')
+[19.257s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kyo/ros2_ws/src/install/thruster_manager/share/thruster_manager/hook/cmake_prefix_path.ps1'
+[19.257s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kyo/ros2_ws/src/install/thruster_manager/share/thruster_manager/hook/cmake_prefix_path.dsv'
+[19.257s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kyo/ros2_ws/src/install/thruster_manager/share/thruster_manager/hook/cmake_prefix_path.sh'
+[19.257s] Level 1:colcon.colcon_core.environment:checking '/home/kyo/ros2_ws/src/install/thruster_manager/lib'
+[19.257s] Level 1:colcon.colcon_core.shell:create_environment_hook('thruster_manager', 'ld_library_path_lib')
+[19.257s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kyo/ros2_ws/src/install/thruster_manager/share/thruster_manager/hook/ld_library_path_lib.ps1'
+[19.258s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kyo/ros2_ws/src/install/thruster_manager/share/thruster_manager/hook/ld_library_path_lib.dsv'
+[19.258s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kyo/ros2_ws/src/install/thruster_manager/share/thruster_manager/hook/ld_library_path_lib.sh'
+[19.258s] Level 1:colcon.colcon_core.environment:checking '/home/kyo/ros2_ws/src/install/thruster_manager/bin'
+[19.258s] Level 1:colcon.colcon_core.environment:checking '/home/kyo/ros2_ws/src/install/thruster_manager/lib/pkgconfig/thruster_manager.pc'
+[19.258s] Level 1:colcon.colcon_core.environment:checking '/home/kyo/ros2_ws/src/install/thruster_manager/lib/python3.10/site-packages'
+[19.258s] Level 1:colcon.colcon_core.environment:checking '/home/kyo/ros2_ws/src/install/thruster_manager/bin'
+[19.258s] INFO:colcon.colcon_core.shell:Creating package script '/home/kyo/ros2_ws/src/install/thruster_manager/share/thruster_manager/package.ps1'
+[19.258s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kyo/ros2_ws/src/install/thruster_manager/share/thruster_manager/package.dsv'
+[19.259s] INFO:colcon.colcon_core.shell:Creating package script '/home/kyo/ros2_ws/src/install/thruster_manager/share/thruster_manager/package.sh'
+[19.259s] INFO:colcon.colcon_core.shell:Creating package script '/home/kyo/ros2_ws/src/install/thruster_manager/share/thruster_manager/package.bash'
+[19.259s] INFO:colcon.colcon_core.shell:Creating package script '/home/kyo/ros2_ws/src/install/thruster_manager/share/thruster_manager/package.zsh'
+[19.259s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kyo/ros2_ws/src/install/thruster_manager/share/colcon-core/packages/thruster_manager)
+[19.259s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kyo/ros2_ws/src/auv_control' with build type 'ament_cmake'
+[19.259s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kyo/ros2_ws/src/auv_control'
+[19.259s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[19.259s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[19.266s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kyo/ros2_ws/src/build/auv_control': AMENT_PREFIX_PATH=/home/kyo/ros2_ws/src/install/thruster_manager:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kyo/ros2_ws/src/install/thruster_manager:/opt/ros/humble LD_LIBRARY_PATH=/home/kyo/ros2_ws/src/install/thruster_manager/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/kyo/ros2_ws/src/auv_control -DCMAKE_INSTALL_PREFIX=/home/kyo/ros2_ws/src/install/auv_control
+[20.404s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kyo/ros2_ws/src/build/auv_control' returned '0': AMENT_PREFIX_PATH=/home/kyo/ros2_ws/src/install/thruster_manager:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kyo/ros2_ws/src/install/thruster_manager:/opt/ros/humble LD_LIBRARY_PATH=/home/kyo/ros2_ws/src/install/thruster_manager/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/kyo/ros2_ws/src/auv_control -DCMAKE_INSTALL_PREFIX=/home/kyo/ros2_ws/src/install/auv_control
+[20.405s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kyo/ros2_ws/src/build/auv_control': AMENT_PREFIX_PATH=/home/kyo/ros2_ws/src/install/thruster_manager:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kyo/ros2_ws/src/install/thruster_manager:/opt/ros/humble LD_LIBRARY_PATH=/home/kyo/ros2_ws/src/install/thruster_manager/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/kyo/ros2_ws/src/build/auv_control -- -j20 -l20
+[39.873s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kyo/ros2_ws/src/build/auv_control' returned '0': AMENT_PREFIX_PATH=/home/kyo/ros2_ws/src/install/thruster_manager:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kyo/ros2_ws/src/install/thruster_manager:/opt/ros/humble LD_LIBRARY_PATH=/home/kyo/ros2_ws/src/install/thruster_manager/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/kyo/ros2_ws/src/build/auv_control -- -j20 -l20
+[39.917s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kyo/ros2_ws/src/build/auv_control': AMENT_PREFIX_PATH=/home/kyo/ros2_ws/src/install/thruster_manager:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kyo/ros2_ws/src/install/thruster_manager:/opt/ros/humble LD_LIBRARY_PATH=/home/kyo/ros2_ws/src/install/thruster_manager/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/kyo/ros2_ws/src/build/auv_control
+[39.979s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(auv_control)
+[39.979s] Level 1:colcon.colcon_core.environment:checking '/home/kyo/ros2_ws/src/install/auv_control' for CMake module files
+[39.979s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kyo/ros2_ws/src/build/auv_control' returned '0': AMENT_PREFIX_PATH=/home/kyo/ros2_ws/src/install/thruster_manager:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kyo/ros2_ws/src/install/thruster_manager:/opt/ros/humble LD_LIBRARY_PATH=/home/kyo/ros2_ws/src/install/thruster_manager/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/kyo/ros2_ws/src/build/auv_control
+[39.980s] Level 1:colcon.colcon_core.environment:checking '/home/kyo/ros2_ws/src/install/auv_control' for CMake config files
+[39.980s] Level 1:colcon.colcon_core.shell:create_environment_hook('auv_control', 'cmake_prefix_path')
+[39.980s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kyo/ros2_ws/src/install/auv_control/share/auv_control/hook/cmake_prefix_path.ps1'
+[39.981s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kyo/ros2_ws/src/install/auv_control/share/auv_control/hook/cmake_prefix_path.dsv'
+[39.981s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kyo/ros2_ws/src/install/auv_control/share/auv_control/hook/cmake_prefix_path.sh'
+[39.981s] Level 1:colcon.colcon_core.environment:checking '/home/kyo/ros2_ws/src/install/auv_control/lib'
+[39.981s] Level 1:colcon.colcon_core.shell:create_environment_hook('auv_control', 'ld_library_path_lib')
+[39.981s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kyo/ros2_ws/src/install/auv_control/share/auv_control/hook/ld_library_path_lib.ps1'
+[39.982s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kyo/ros2_ws/src/install/auv_control/share/auv_control/hook/ld_library_path_lib.dsv'
+[39.982s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kyo/ros2_ws/src/install/auv_control/share/auv_control/hook/ld_library_path_lib.sh'
+[39.982s] Level 1:colcon.colcon_core.environment:checking '/home/kyo/ros2_ws/src/install/auv_control/bin'
+[39.982s] Level 1:colcon.colcon_core.environment:checking '/home/kyo/ros2_ws/src/install/auv_control/lib/pkgconfig/auv_control.pc'
+[39.982s] Level 1:colcon.colcon_core.environment:checking '/home/kyo/ros2_ws/src/install/auv_control/lib/python3.10/site-packages'
+[39.982s] Level 1:colcon.colcon_core.environment:checking '/home/kyo/ros2_ws/src/install/auv_control/bin'
+[39.983s] INFO:colcon.colcon_core.shell:Creating package script '/home/kyo/ros2_ws/src/install/auv_control/share/auv_control/package.ps1'
+[39.983s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kyo/ros2_ws/src/install/auv_control/share/auv_control/package.dsv'
+[39.983s] INFO:colcon.colcon_core.shell:Creating package script '/home/kyo/ros2_ws/src/install/auv_control/share/auv_control/package.sh'
+[39.984s] INFO:colcon.colcon_core.shell:Creating package script '/home/kyo/ros2_ws/src/install/auv_control/share/auv_control/package.bash'
+[39.984s] INFO:colcon.colcon_core.shell:Creating package script '/home/kyo/ros2_ws/src/install/auv_control/share/auv_control/package.zsh'
+[39.984s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kyo/ros2_ws/src/install/auv_control/share/colcon-core/packages/auv_control)
+[40.024s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(auv_control)
+[40.025s] Level 1:colcon.colcon_core.environment:checking '/home/kyo/ros2_ws/src/install/auv_control' for CMake module files
+[40.025s] Level 1:colcon.colcon_core.environment:checking '/home/kyo/ros2_ws/src/install/auv_control' for CMake config files
+[40.025s] Level 1:colcon.colcon_core.shell:create_environment_hook('auv_control', 'cmake_prefix_path')
+[40.025s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kyo/ros2_ws/src/install/auv_control/share/auv_control/hook/cmake_prefix_path.ps1'
+[40.026s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kyo/ros2_ws/src/install/auv_control/share/auv_control/hook/cmake_prefix_path.dsv'
+[40.026s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kyo/ros2_ws/src/install/auv_control/share/auv_control/hook/cmake_prefix_path.sh'
+[40.026s] Level 1:colcon.colcon_core.environment:checking '/home/kyo/ros2_ws/src/install/auv_control/lib'
+[40.026s] Level 1:colcon.colcon_core.shell:create_environment_hook('auv_control', 'ld_library_path_lib')
+[40.026s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kyo/ros2_ws/src/install/auv_control/share/auv_control/hook/ld_library_path_lib.ps1'
+[40.027s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kyo/ros2_ws/src/install/auv_control/share/auv_control/hook/ld_library_path_lib.dsv'
+[40.027s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kyo/ros2_ws/src/install/auv_control/share/auv_control/hook/ld_library_path_lib.sh'
+[40.027s] Level 1:colcon.colcon_core.environment:checking '/home/kyo/ros2_ws/src/install/auv_control/bin'
+[40.027s] Level 1:colcon.colcon_core.environment:checking '/home/kyo/ros2_ws/src/install/auv_control/lib/pkgconfig/auv_control.pc'
+[40.027s] Level 1:colcon.colcon_core.environment:checking '/home/kyo/ros2_ws/src/install/auv_control/lib/python3.10/site-packages'
+[40.027s] Level 1:colcon.colcon_core.environment:checking '/home/kyo/ros2_ws/src/install/auv_control/bin'
+[40.028s] INFO:colcon.colcon_core.shell:Creating package script '/home/kyo/ros2_ws/src/install/auv_control/share/auv_control/package.ps1'
+[40.028s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kyo/ros2_ws/src/install/auv_control/share/auv_control/package.dsv'
+[40.028s] INFO:colcon.colcon_core.shell:Creating package script '/home/kyo/ros2_ws/src/install/auv_control/share/auv_control/package.sh'
+[40.029s] INFO:colcon.colcon_core.shell:Creating package script '/home/kyo/ros2_ws/src/install/auv_control/share/auv_control/package.bash'
+[40.029s] INFO:colcon.colcon_core.shell:Creating package script '/home/kyo/ros2_ws/src/install/auv_control/share/auv_control/package.zsh'
+[40.029s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kyo/ros2_ws/src/install/auv_control/share/colcon-core/packages/auv_control)
+[40.029s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[40.029s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[40.029s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[40.029s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[40.033s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[40.034s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[40.034s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[40.045s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[40.045s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kyo/ros2_ws/src/install/local_setup.ps1'
+[40.046s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kyo/ros2_ws/src/install/_local_setup_util_ps1.py'
+[40.046s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kyo/ros2_ws/src/install/setup.ps1'
+[40.047s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kyo/ros2_ws/src/install/local_setup.sh'
+[40.048s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kyo/ros2_ws/src/install/_local_setup_util_sh.py'
+[40.048s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kyo/ros2_ws/src/install/setup.sh'
+[40.049s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kyo/ros2_ws/src/install/local_setup.bash'
+[40.049s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kyo/ros2_ws/src/install/setup.bash'
+[40.050s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kyo/ros2_ws/src/install/local_setup.zsh'
+[40.050s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kyo/ros2_ws/src/install/setup.zsh'

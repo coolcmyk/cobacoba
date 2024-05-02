@@ -1,0 +1,4 @@
+Invoking command in '/home/kyo/ros2_ws/src/build/bluerov2_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/kyo/ros2_ws/src/bluerov2/bluerov2_description -DCMAKE_INSTALL_PREFIX=/home/kyo/ros2_ws/src/install/bluerov2_description
+Invoked command in '/home/kyo/ros2_ws/src/build/bluerov2_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/kyo/ros2_ws/src/bluerov2/bluerov2_description -DCMAKE_INSTALL_PREFIX=/home/kyo/ros2_ws/src/install/bluerov2_description
+Invoking command in '/home/kyo/ros2_ws/src/build/bluerov2_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/kyo/ros2_ws/src/build/bluerov2_description -- -j20 -l20
+Invoked command in '/home/kyo/ros2_ws/src/build/bluerov2_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/kyo/ros2_ws/src/build/bluerov2_description -- -j20 -l20

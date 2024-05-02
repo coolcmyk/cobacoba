@@ -1,0 +1,999 @@
+[0.000000] (-) TimerEvent: {}
+[0.000069] (bluerov2_description) JobQueued: {'identifier': 'bluerov2_description', 'dependencies': OrderedDict()}
+[0.000117] (pose_to_tf) JobQueued: {'identifier': 'pose_to_tf', 'dependencies': OrderedDict()}
+[0.000127] (thruster_manager) JobQueued: {'identifier': 'thruster_manager', 'dependencies': OrderedDict()}
+[0.000135] (auv_control) JobQueued: {'identifier': 'auv_control', 'dependencies': OrderedDict([('thruster_manager', '/home/kyo/ros2_ws/install/thruster_manager')])}
+[0.000144] (bluerov2_control) JobQueued: {'identifier': 'bluerov2_control', 'dependencies': OrderedDict([('thruster_manager', '/home/kyo/ros2_ws/install/thruster_manager'), ('auv_control', '/home/kyo/ros2_ws/install/auv_control')])}
+[0.000153] (thruster_manager) JobStarted: {'identifier': 'thruster_manager'}
+[0.002703] (bluerov2_description) JobStarted: {'identifier': 'bluerov2_description'}
+[0.004744] (pose_to_tf) JobStarted: {'identifier': 'pose_to_tf'}
+[0.006756] (thruster_manager) JobProgress: {'identifier': 'thruster_manager', 'progress': 'cmake'}
+[0.006965] (thruster_manager) Command: {'cmd': ['/usr/bin/cmake', '/home/kyo/ros2_ws/src/thruster_manager', '-DCMAKE_INSTALL_PREFIX=/home/kyo/ros2_ws/install/thruster_manager'], 'cwd': '/home/kyo/ros2_ws/build/thruster_manager', 'env': OrderedDict([('USER', 'kyo'), ('LC_TIME', 'id_ID.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('OLDPWD', '/home/kyo/ros2_ws/src'), ('HOME', '/home/kyo'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/kyo/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'id_ID.UTF-8'), ('SYSTEMD_EXEC_PID', '1500'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/kyo/.nvm'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kyo'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'kyo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kyo-Zenbook-UX5401ZAS-UX5401ZAS:@/tmp/.ICE-unix/1193,unix/kyo-Zenbook-UX5401ZAS-UX5401ZAS:/tmp/.ICE-unix/1193'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ded8edc5_3572_45f3_b793_bb73d592cba3'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.260'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NJSAN2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kyo/ros2_ws/build/thruster_manager'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('NVM_CD_FLAGS', '-q'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('NVM_RC_VERSION', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.008721] (bluerov2_description) JobProgress: {'identifier': 'bluerov2_description', 'progress': 'cmake'}
+[0.008900] (bluerov2_description) Command: {'cmd': ['/usr/bin/cmake', '/home/kyo/ros2_ws/src/bluerov2/bluerov2_description', '-DCMAKE_INSTALL_PREFIX=/home/kyo/ros2_ws/install/bluerov2_description'], 'cwd': '/home/kyo/ros2_ws/build/bluerov2_description', 'env': OrderedDict([('USER', 'kyo'), ('LC_TIME', 'id_ID.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('OLDPWD', '/home/kyo/ros2_ws/src'), ('HOME', '/home/kyo'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/kyo/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'id_ID.UTF-8'), ('SYSTEMD_EXEC_PID', '1500'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/kyo/.nvm'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kyo'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'kyo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kyo-Zenbook-UX5401ZAS-UX5401ZAS:@/tmp/.ICE-unix/1193,unix/kyo-Zenbook-UX5401ZAS-UX5401ZAS:/tmp/.ICE-unix/1193'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ded8edc5_3572_45f3_b793_bb73d592cba3'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.260'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NJSAN2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kyo/ros2_ws/build/bluerov2_description'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('NVM_CD_FLAGS', '-q'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('NVM_RC_VERSION', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.010677] (pose_to_tf) JobProgress: {'identifier': 'pose_to_tf', 'progress': 'cmake'}
+[0.010861] (pose_to_tf) Command: {'cmd': ['/usr/bin/cmake', '/home/kyo/ros2_ws/src/pose_to_tf', '-DCMAKE_INSTALL_PREFIX=/home/kyo/ros2_ws/install/pose_to_tf'], 'cwd': '/home/kyo/ros2_ws/build/pose_to_tf', 'env': OrderedDict([('USER', 'kyo'), ('LC_TIME', 'id_ID.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('OLDPWD', '/home/kyo/ros2_ws/src'), ('HOME', '/home/kyo'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/kyo/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'id_ID.UTF-8'), ('SYSTEMD_EXEC_PID', '1500'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/kyo/.nvm'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kyo'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'kyo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kyo-Zenbook-UX5401ZAS-UX5401ZAS:@/tmp/.ICE-unix/1193,unix/kyo-Zenbook-UX5401ZAS-UX5401ZAS:/tmp/.ICE-unix/1193'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ded8edc5_3572_45f3_b793_bb73d592cba3'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.260'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NJSAN2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kyo/ros2_ws/build/pose_to_tf'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('NVM_CD_FLAGS', '-q'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('NVM_RC_VERSION', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.043592] (bluerov2_description) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.044040] (thruster_manager) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.046186] (pose_to_tf) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.078200] (bluerov2_description) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.078392] (thruster_manager) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.078440] (pose_to_tf) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.082912] (pose_to_tf) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.083242] (thruster_manager) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.083365] (bluerov2_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.099617] (-) TimerEvent: {}
+[0.123090] (thruster_manager) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.123233] (pose_to_tf) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.123385] (bluerov2_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.128249] (thruster_manager) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.128460] (pose_to_tf) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.128645] (thruster_manager) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.129081] (bluerov2_description) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.129248] (bluerov2_description) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.129368] (bluerov2_description) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.129485] (pose_to_tf) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.129583] (pose_to_tf) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.129618] (thruster_manager) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.130718] (thruster_manager) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.130761] (pose_to_tf) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.131265] (bluerov2_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.181420] (bluerov2_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.181565] (pose_to_tf) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.181732] (thruster_manager) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.186885] (thruster_manager) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.187078] (thruster_manager) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.187475] (bluerov2_description) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.187652] (thruster_manager) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.187825] (bluerov2_description) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.188017] (bluerov2_description) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.188751] (thruster_manager) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.189181] (bluerov2_description) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.190548] (pose_to_tf) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.190959] (pose_to_tf) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.191521] (pose_to_tf) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.192588] (pose_to_tf) StdoutLine: {'line': b'-- Found ament_cmake_auto: 1.3.8 (/opt/ros/humble/share/ament_cmake_auto/cmake)\n'}
+[0.199793] (-) TimerEvent: {}
+[0.293249] (bluerov2_description) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.293387] (thruster_manager) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.298521] (pose_to_tf) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.299967] (-) TimerEvent: {}
+[0.358210] (thruster_manager) StdoutLine: {'line': b'-- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.394953] (thruster_manager) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.398601] (thruster_manager) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.400184] (-) TimerEvent: {}
+[0.405586] (thruster_manager) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.416586] (thruster_manager) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.417941] (bluerov2_description) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.419755] (bluerov2_description) StdoutLine: {'line': b'-- Generating done\n'}
+[0.420149] (bluerov2_description) StdoutLine: {'line': b'-- Build files have been written to: /home/kyo/ros2_ws/build/bluerov2_description\n'}
+[0.424820] (bluerov2_description) CommandEnded: {'returncode': 0}
+[0.425273] (bluerov2_description) JobProgress: {'identifier': 'bluerov2_description', 'progress': 'build'}
+[0.425295] (bluerov2_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/kyo/ros2_ws/build/bluerov2_description', '--', '-j20', '-l20'], 'cwd': '/home/kyo/ros2_ws/build/bluerov2_description', 'env': OrderedDict([('USER', 'kyo'), ('LC_TIME', 'id_ID.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('OLDPWD', '/home/kyo/ros2_ws/src'), ('HOME', '/home/kyo'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/kyo/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'id_ID.UTF-8'), ('SYSTEMD_EXEC_PID', '1500'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/kyo/.nvm'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kyo'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'kyo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kyo-Zenbook-UX5401ZAS-UX5401ZAS:@/tmp/.ICE-unix/1193,unix/kyo-Zenbook-UX5401ZAS-UX5401ZAS:/tmp/.ICE-unix/1193'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ded8edc5_3572_45f3_b793_bb73d592cba3'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.260'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NJSAN2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kyo/ros2_ws/build/bluerov2_description'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('NVM_CD_FLAGS', '-q'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('NVM_RC_VERSION', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.431379] (thruster_manager) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.452279] (bluerov2_description) CommandEnded: {'returncode': 0}
+[0.456661] (pose_to_tf) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.459644] (pose_to_tf) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.465820] (bluerov2_description) JobProgress: {'identifier': 'bluerov2_description', 'progress': 'install'}
+[0.465886] (pose_to_tf) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.472840] (bluerov2_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/kyo/ros2_ws/build/bluerov2_description'], 'cwd': '/home/kyo/ros2_ws/build/bluerov2_description', 'env': OrderedDict([('USER', 'kyo'), ('LC_TIME', 'id_ID.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('OLDPWD', '/home/kyo/ros2_ws/src'), ('HOME', '/home/kyo'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/kyo/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'id_ID.UTF-8'), ('SYSTEMD_EXEC_PID', '1500'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/kyo/.nvm'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kyo'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'kyo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kyo-Zenbook-UX5401ZAS-UX5401ZAS:@/tmp/.ICE-unix/1193,unix/kyo-Zenbook-UX5401ZAS-UX5401ZAS:/tmp/.ICE-unix/1193'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ded8edc5_3572_45f3_b793_bb73d592cba3'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.260'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NJSAN2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kyo/ros2_ws/build/bluerov2_description'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('NVM_CD_FLAGS', '-q'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('NVM_RC_VERSION', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.475692] (pose_to_tf) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.477495] (bluerov2_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.477723] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/bluerov2_description/launch\n'}
+[0.477770] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/bluerov2_description/launch/state_publisher_launch.py\n'}
+[0.477809] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/bluerov2_description/launch/manual.yaml\n'}
+[0.477844] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/bluerov2_description/launch/upload_bluerov2_launch.py\n'}
+[0.477972] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/bluerov2_description/launch/world_launch.py\n'}
+[0.478014] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/bluerov2_description/meshes\n'}
+[0.478073] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/bluerov2_description/meshes/bluerov2_noprop.stl\n'}
+[0.487121] (thruster_manager) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.489287] (thruster_manager) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.490162] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/bluerov2_description/meshes/bluerov2_propccw.dae\n'}
+[0.490470] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/bluerov2_description/meshes/bluerov2_propcw.ive\n'}
+[0.490574] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/bluerov2_description/meshes/bluerov2_propcw.dae\n'}
+[0.491107] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/bluerov2_description/meshes/bluerov2_propccw.ive\n'}
+[0.491341] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/bluerov2_description/meshes/bluerov2_noprop.dae\n'}
+[0.491925] (pose_to_tf) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.500346] (-) TimerEvent: {}
+[0.506885] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/bluerov2_description/meshes/ping360_sonar.dae\n'}
+[0.509515] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/bluerov2_description/urdf\n'}
+[0.509747] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/bluerov2_description/urdf/snippets\n'}
+[0.509798] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/bluerov2_description/urdf/snippets/common.urdf.xacro\n'}
+[0.509870] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/bluerov2_description/urdf/snippets/magnetometer_snippets.xacro\n'}
+[0.509924] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/bluerov2_description/urdf/snippets/imu_snippets.xacro\n'}
+[0.509962] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/bluerov2_description/urdf/snippets/gps_sensor_snippets.xacro\n'}
+[0.509999] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/bluerov2_description/urdf/snippets/pressure_snippets.xacro\n'}
+[0.510036] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/bluerov2_description/urdf/snippets/chemical_concentration_snippets.xacro\n'}
+[0.510071] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/bluerov2_description/urdf/snippets/README.md\n'}
+[0.510106] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/bluerov2_description/urdf/snippets/camera_snippets.xacro\n'}
+[0.510141] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/bluerov2_description/urdf/snippets/stereo_snippets.xacro\n'}
+[0.510175] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/bluerov2_description/urdf/snippets/all_sensor_snippets.xacro\n'}
+[0.510210] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/bluerov2_description/urdf/snippets/rpt_snippets.xacro\n'}
+[0.510243] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/bluerov2_description/urdf/snippets/sonar_snippets.xacro\n'}
+[0.510277] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/bluerov2_description/urdf/snippets/pose_3d_snippets.xacro\n'}
+[0.510364] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/bluerov2_description/urdf/snippets/dvl_snippets.xacro\n'}
+[0.510398] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/bluerov2_description/urdf/demo_world.sdf\n'}
+[0.510433] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/bluerov2_description/urdf/sensors.xacro\n'}
+[0.510469] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/bluerov2_description/urdf/bluerov2.xacro\n'}
+[0.510504] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/bluerov2_description/urdf/hydrodynamics.xacro\n'}
+[0.510538] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/bluerov2_description/urdf/thrusters.xacro\n'}
+[0.510573] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/ament_index/resource_index/package_run_dependencies/bluerov2_description\n'}
+[0.510608] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/ament_index/resource_index/parent_prefix_path/bluerov2_description\n'}
+[0.510649] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/bluerov2_description/environment/ament_prefix_path.sh\n'}
+[0.510685] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/bluerov2_description/environment/ament_prefix_path.dsv\n'}
+[0.510738] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/bluerov2_description/environment/path.sh\n'}
+[0.510774] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/bluerov2_description/environment/path.dsv\n'}
+[0.510864] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/bluerov2_description/local_setup.bash\n'}
+[0.510901] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/bluerov2_description/local_setup.sh\n'}
+[0.510934] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/bluerov2_description/local_setup.zsh\n'}
+[0.510966] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/bluerov2_description/local_setup.dsv\n'}
+[0.510996] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/bluerov2_description/package.dsv\n'}
+[0.511027] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/ament_index/resource_index/packages/bluerov2_description\n'}
+[0.511057] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/bluerov2_description/cmake/bluerov2_descriptionConfig.cmake\n'}
+[0.511087] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/bluerov2_description/cmake/bluerov2_descriptionConfig-version.cmake\n'}
+[0.511117] (bluerov2_description) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_description/share/bluerov2_description/package.xml\n'}
+[0.512510] (bluerov2_description) CommandEnded: {'returncode': 0}
+[0.538597] (bluerov2_description) JobEnded: {'identifier': 'bluerov2_description', 'rc': 0}
+[0.543606] (pose_to_tf) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.545131] (pose_to_tf) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.554507] (thruster_manager) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.578194] (thruster_manager) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.600589] (-) TimerEvent: {}
+[0.607120] (pose_to_tf) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.611871] (thruster_manager) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.617423] (thruster_manager) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.626944] (pose_to_tf) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.664696] (pose_to_tf) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.668043] (thruster_manager) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.668225] (thruster_manager) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.672046] (pose_to_tf) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.700804] (-) TimerEvent: {}
+[0.721997] (thruster_manager) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.722265] (pose_to_tf) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.722373] (pose_to_tf) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.722688] (thruster_manager) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.774929] (pose_to_tf) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.776467] (pose_to_tf) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.801012] (-) TimerEvent: {}
+[0.839245] (thruster_manager) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.871048] (thruster_manager) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.901155] (-) TimerEvent: {}
+[0.928383] (thruster_manager) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.6 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[1.001322] (-) TimerEvent: {}
+[1.101804] (-) TimerEvent: {}
+[1.165244] (thruster_manager) StdoutLine: {'line': b'-- Found urdf: 2.6.0 (/opt/ros/humble/share/urdf/cmake)\n'}
+[1.181286] (thruster_manager) StdoutLine: {'line': b'-- Found kdl_parser: 2.6.4 (/opt/ros/humble/share/kdl_parser/cmake)\n'}
+[1.187892] (thruster_manager) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[1.188814] (thruster_manager) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[1.188889] (thruster_manager) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.190911] (thruster_manager) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 16.0.8 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)\n'}
+[1.201983] (-) TimerEvent: {}
+[1.267308] (pose_to_tf) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.267983] (thruster_manager) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.273794] (pose_to_tf) StdoutLine: {'line': b'-- Generating done\n'}
+[1.274794] (pose_to_tf) StdoutLine: {'line': b'-- Build files have been written to: /home/kyo/ros2_ws/build/pose_to_tf\n'}
+[1.281418] (thruster_manager) StdoutLine: {'line': b'-- Generating done\n'}
+[1.281606] (pose_to_tf) CommandEnded: {'returncode': 0}
+[1.281877] (pose_to_tf) JobProgress: {'identifier': 'pose_to_tf', 'progress': 'build'}
+[1.281894] (pose_to_tf) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/kyo/ros2_ws/build/pose_to_tf', '--', '-j20', '-l20'], 'cwd': '/home/kyo/ros2_ws/build/pose_to_tf', 'env': OrderedDict([('USER', 'kyo'), ('LC_TIME', 'id_ID.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('OLDPWD', '/home/kyo/ros2_ws/src'), ('HOME', '/home/kyo'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/kyo/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'id_ID.UTF-8'), ('SYSTEMD_EXEC_PID', '1500'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/kyo/.nvm'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kyo'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'kyo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kyo-Zenbook-UX5401ZAS-UX5401ZAS:@/tmp/.ICE-unix/1193,unix/kyo-Zenbook-UX5401ZAS-UX5401ZAS:/tmp/.ICE-unix/1193'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ded8edc5_3572_45f3_b793_bb73d592cba3'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.260'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NJSAN2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kyo/ros2_ws/build/pose_to_tf'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('NVM_CD_FLAGS', '-q'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('NVM_RC_VERSION', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.282284] (thruster_manager) StdoutLine: {'line': b'-- Build files have been written to: /home/kyo/ros2_ws/build/thruster_manager\n'}
+[1.289281] (thruster_manager) CommandEnded: {'returncode': 0}
+[1.289619] (thruster_manager) JobProgress: {'identifier': 'thruster_manager', 'progress': 'build'}
+[1.289877] (thruster_manager) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/kyo/ros2_ws/build/thruster_manager', '--', '-j20', '-l20'], 'cwd': '/home/kyo/ros2_ws/build/thruster_manager', 'env': OrderedDict([('USER', 'kyo'), ('LC_TIME', 'id_ID.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('OLDPWD', '/home/kyo/ros2_ws/src'), ('HOME', '/home/kyo'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/kyo/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'id_ID.UTF-8'), ('SYSTEMD_EXEC_PID', '1500'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/kyo/.nvm'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kyo'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'kyo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kyo-Zenbook-UX5401ZAS-UX5401ZAS:@/tmp/.ICE-unix/1193,unix/kyo-Zenbook-UX5401ZAS-UX5401ZAS:/tmp/.ICE-unix/1193'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ded8edc5_3572_45f3_b793_bb73d592cba3'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.260'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NJSAN2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kyo/ros2_ws/build/thruster_manager'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('NVM_CD_FLAGS', '-q'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('NVM_RC_VERSION', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.302072] (-) TimerEvent: {}
+[1.309471] (pose_to_tf) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/pose_to_tf.dir/pose_to_tf.cpp.o\x1b[0m\n'}
+[1.318144] (thruster_manager) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/thruster_manager.dir/src/thruster_manager_node.cpp.o\x1b[0m\n'}
+[1.318380] (thruster_manager) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/thruster_manager.dir/src/thruster_manager.cpp.o\x1b[0m\n'}
+[1.318502] (thruster_manager) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/thruster_manager_node.dir/rclcpp_components/node_main_thruster_manager_node.cpp.o\x1b[0m\n'}
+[1.402298] (-) TimerEvent: {}
+[1.502726] (-) TimerEvent: {}
+[1.603147] (-) TimerEvent: {}
+[1.703580] (-) TimerEvent: {}
+[1.804009] (-) TimerEvent: {}
+[1.904436] (-) TimerEvent: {}
+[2.004866] (-) TimerEvent: {}
+[2.105296] (-) TimerEvent: {}
+[2.205719] (-) TimerEvent: {}
+[2.306146] (-) TimerEvent: {}
+[2.406565] (-) TimerEvent: {}
+[2.506950] (-) TimerEvent: {}
+[2.607257] (-) TimerEvent: {}
+[2.707536] (-) TimerEvent: {}
+[2.807858] (-) TimerEvent: {}
+[2.908165] (-) TimerEvent: {}
+[3.008530] (-) TimerEvent: {}
+[3.108797] (-) TimerEvent: {}
+[3.209170] (-) TimerEvent: {}
+[3.309531] (-) TimerEvent: {}
+[3.409903] (-) TimerEvent: {}
+[3.510277] (-) TimerEvent: {}
+[3.610634] (-) TimerEvent: {}
+[3.622626] (thruster_manager) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking CXX executable thruster_manager_node\x1b[0m\n'}
+[3.710783] (-) TimerEvent: {}
+[3.712351] (thruster_manager) StdoutLine: {'line': b'[ 57%] Built target thruster_manager_node\n'}
+[3.810879] (-) TimerEvent: {}
+[3.911165] (-) TimerEvent: {}
+[4.011506] (-) TimerEvent: {}
+[4.111846] (-) TimerEvent: {}
+[4.212192] (-) TimerEvent: {}
+[4.312437] (-) TimerEvent: {}
+[4.412784] (-) TimerEvent: {}
+[4.513134] (-) TimerEvent: {}
+[4.613387] (-) TimerEvent: {}
+[4.713731] (-) TimerEvent: {}
+[4.814080] (-) TimerEvent: {}
+[4.914430] (-) TimerEvent: {}
+[5.014799] (-) TimerEvent: {}
+[5.115058] (-) TimerEvent: {}
+[5.215425] (-) TimerEvent: {}
+[5.315803] (-) TimerEvent: {}
+[5.416093] (-) TimerEvent: {}
+[5.516455] (-) TimerEvent: {}
+[5.616777] (-) TimerEvent: {}
+[5.717122] (-) TimerEvent: {}
+[5.817563] (-) TimerEvent: {}
+[5.917915] (-) TimerEvent: {}
+[6.018265] (-) TimerEvent: {}
+[6.118598] (-) TimerEvent: {}
+[6.218845] (-) TimerEvent: {}
+[6.319208] (-) TimerEvent: {}
+[6.419549] (-) TimerEvent: {}
+[6.519897] (-) TimerEvent: {}
+[6.620246] (-) TimerEvent: {}
+[6.720591] (-) TimerEvent: {}
+[6.820930] (-) TimerEvent: {}
+[6.921276] (-) TimerEvent: {}
+[7.021613] (-) TimerEvent: {}
+[7.121957] (-) TimerEvent: {}
+[7.222310] (-) TimerEvent: {}
+[7.322661] (-) TimerEvent: {}
+[7.422909] (-) TimerEvent: {}
+[7.523271] (-) TimerEvent: {}
+[7.623615] (-) TimerEvent: {}
+[7.723959] (-) TimerEvent: {}
+[7.824304] (-) TimerEvent: {}
+[7.924656] (-) TimerEvent: {}
+[8.024993] (-) TimerEvent: {}
+[8.125339] (-) TimerEvent: {}
+[8.225643] (-) TimerEvent: {}
+[8.326108] (-) TimerEvent: {}
+[8.426527] (-) TimerEvent: {}
+[8.526847] (-) TimerEvent: {}
+[8.627158] (-) TimerEvent: {}
+[8.727625] (-) TimerEvent: {}
+[8.828075] (-) TimerEvent: {}
+[8.928468] (-) TimerEvent: {}
+[9.028868] (-) TimerEvent: {}
+[9.129270] (-) TimerEvent: {}
+[9.229655] (-) TimerEvent: {}
+[9.330042] (-) TimerEvent: {}
+[9.430428] (-) TimerEvent: {}
+[9.530855] (-) TimerEvent: {}
+[9.631250] (-) TimerEvent: {}
+[9.731623] (-) TimerEvent: {}
+[9.832001] (-) TimerEvent: {}
+[9.932358] (-) TimerEvent: {}
+[10.032674] (-) TimerEvent: {}
+[10.133067] (-) TimerEvent: {}
+[10.233456] (-) TimerEvent: {}
+[10.333866] (-) TimerEvent: {}
+[10.434252] (-) TimerEvent: {}
+[10.534676] (-) TimerEvent: {}
+[10.634953] (-) TimerEvent: {}
+[10.735348] (-) TimerEvent: {}
+[10.835733] (-) TimerEvent: {}
+[10.936122] (-) TimerEvent: {}
+[11.036512] (-) TimerEvent: {}
+[11.136920] (-) TimerEvent: {}
+[11.237332] (-) TimerEvent: {}
+[11.337752] (-) TimerEvent: {}
+[11.438147] (-) TimerEvent: {}
+[11.538543] (-) TimerEvent: {}
+[11.638854] (-) TimerEvent: {}
+[11.739133] (-) TimerEvent: {}
+[11.839510] (-) TimerEvent: {}
+[11.939893] (-) TimerEvent: {}
+[12.040290] (-) TimerEvent: {}
+[12.064681] (thruster_manager) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library libthruster_manager.so\x1b[0m\n'}
+[12.140522] (-) TimerEvent: {}
+[12.240911] (-) TimerEvent: {}
+[12.341305] (-) TimerEvent: {}
+[12.441694] (-) TimerEvent: {}
+[12.542072] (-) TimerEvent: {}
+[12.642465] (-) TimerEvent: {}
+[12.737556] (thruster_manager) StdoutLine: {'line': b'[ 71%] Built target thruster_manager\n'}
+[12.742697] (-) TimerEvent: {}
+[12.749546] (thruster_manager) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding CXX object CMakeFiles/publish_wrenches.dir/src/publish_wrenches.cpp.o\x1b[0m\n'}
+[12.842807] (-) TimerEvent: {}
+[12.943096] (-) TimerEvent: {}
+[13.043496] (-) TimerEvent: {}
+[13.143906] (-) TimerEvent: {}
+[13.244303] (-) TimerEvent: {}
+[13.344673] (-) TimerEvent: {}
+[13.445080] (-) TimerEvent: {}
+[13.545466] (-) TimerEvent: {}
+[13.645854] (-) TimerEvent: {}
+[13.746228] (-) TimerEvent: {}
+[13.846607] (-) TimerEvent: {}
+[13.946989] (-) TimerEvent: {}
+[14.047364] (-) TimerEvent: {}
+[14.147736] (-) TimerEvent: {}
+[14.247993] (-) TimerEvent: {}
+[14.348396] (-) TimerEvent: {}
+[14.448787] (-) TimerEvent: {}
+[14.549174] (-) TimerEvent: {}
+[14.649560] (-) TimerEvent: {}
+[14.749953] (-) TimerEvent: {}
+[14.850264] (-) TimerEvent: {}
+[14.950697] (-) TimerEvent: {}
+[15.050975] (-) TimerEvent: {}
+[15.151285] (-) TimerEvent: {}
+[15.251684] (-) TimerEvent: {}
+[15.352090] (-) TimerEvent: {}
+[15.451576] (pose_to_tf) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable pose_to_tf\x1b[0m\n'}
+[15.452199] (-) TimerEvent: {}
+[15.552529] (-) TimerEvent: {}
+[15.652912] (-) TimerEvent: {}
+[15.753296] (-) TimerEvent: {}
+[15.853727] (-) TimerEvent: {}
+[15.954146] (-) TimerEvent: {}
+[16.054570] (-) TimerEvent: {}
+[16.155012] (-) TimerEvent: {}
+[16.255307] (-) TimerEvent: {}
+[16.286351] (pose_to_tf) StdoutLine: {'line': b'[100%] Built target pose_to_tf\n'}
+[16.298082] (pose_to_tf) CommandEnded: {'returncode': 0}
+[16.309369] (pose_to_tf) JobProgress: {'identifier': 'pose_to_tf', 'progress': 'install'}
+[16.309514] (pose_to_tf) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/kyo/ros2_ws/build/pose_to_tf'], 'cwd': '/home/kyo/ros2_ws/build/pose_to_tf', 'env': OrderedDict([('USER', 'kyo'), ('LC_TIME', 'id_ID.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('OLDPWD', '/home/kyo/ros2_ws/src'), ('HOME', '/home/kyo'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/kyo/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'id_ID.UTF-8'), ('SYSTEMD_EXEC_PID', '1500'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/kyo/.nvm'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kyo'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'kyo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kyo-Zenbook-UX5401ZAS-UX5401ZAS:@/tmp/.ICE-unix/1193,unix/kyo-Zenbook-UX5401ZAS-UX5401ZAS:/tmp/.ICE-unix/1193'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ded8edc5_3572_45f3_b793_bb73d592cba3'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.260'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NJSAN2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kyo/ros2_ws/build/pose_to_tf'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('NVM_CD_FLAGS', '-q'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('NVM_RC_VERSION', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[16.314042] (pose_to_tf) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[16.314165] (pose_to_tf) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/pose_to_tf/lib/pose_to_tf/pose_to_tf\n'}
+[16.321089] (pose_to_tf) StdoutLine: {'line': b'-- Set runtime path of "/home/kyo/ros2_ws/install/pose_to_tf/lib/pose_to_tf/pose_to_tf" to ""\n'}
+[16.321228] (pose_to_tf) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/pose_to_tf/share/ament_index/resource_index/package_run_dependencies/pose_to_tf\n'}
+[16.321266] (pose_to_tf) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/pose_to_tf/share/ament_index/resource_index/parent_prefix_path/pose_to_tf\n'}
+[16.321299] (pose_to_tf) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/pose_to_tf/share/pose_to_tf/environment/ament_prefix_path.sh\n'}
+[16.321331] (pose_to_tf) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/pose_to_tf/share/pose_to_tf/environment/ament_prefix_path.dsv\n'}
+[16.321361] (pose_to_tf) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/pose_to_tf/share/pose_to_tf/environment/path.sh\n'}
+[16.321422] (pose_to_tf) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/pose_to_tf/share/pose_to_tf/environment/path.dsv\n'}
+[16.321465] (pose_to_tf) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/pose_to_tf/share/pose_to_tf/local_setup.bash\n'}
+[16.321497] (pose_to_tf) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/pose_to_tf/share/pose_to_tf/local_setup.sh\n'}
+[16.321528] (pose_to_tf) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/pose_to_tf/share/pose_to_tf/local_setup.zsh\n'}
+[16.321558] (pose_to_tf) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/pose_to_tf/share/pose_to_tf/local_setup.dsv\n'}
+[16.321588] (pose_to_tf) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/pose_to_tf/share/pose_to_tf/package.dsv\n'}
+[16.321617] (pose_to_tf) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/pose_to_tf/share/ament_index/resource_index/packages/pose_to_tf\n'}
+[16.321646] (pose_to_tf) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/pose_to_tf/share/pose_to_tf/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[16.321687] (pose_to_tf) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/pose_to_tf/share/pose_to_tf/cmake/pose_to_tfConfig.cmake\n'}
+[16.321732] (pose_to_tf) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/pose_to_tf/share/pose_to_tf/cmake/pose_to_tfConfig-version.cmake\n'}
+[16.321763] (pose_to_tf) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/pose_to_tf/share/pose_to_tf/package.xml\n'}
+[16.322816] (pose_to_tf) CommandEnded: {'returncode': 0}
+[16.342130] (pose_to_tf) JobEnded: {'identifier': 'pose_to_tf', 'rc': 0}
+[16.355433] (-) TimerEvent: {}
+[16.455788] (-) TimerEvent: {}
+[16.556129] (-) TimerEvent: {}
+[16.656488] (-) TimerEvent: {}
+[16.756820] (-) TimerEvent: {}
+[16.857175] (-) TimerEvent: {}
+[16.957503] (-) TimerEvent: {}
+[17.057855] (-) TimerEvent: {}
+[17.158216] (-) TimerEvent: {}
+[17.258533] (-) TimerEvent: {}
+[17.358832] (-) TimerEvent: {}
+[17.459064] (-) TimerEvent: {}
+[17.559411] (-) TimerEvent: {}
+[17.659744] (-) TimerEvent: {}
+[17.760107] (-) TimerEvent: {}
+[17.860419] (-) TimerEvent: {}
+[17.960736] (-) TimerEvent: {}
+[18.061058] (-) TimerEvent: {}
+[18.161384] (-) TimerEvent: {}
+[18.261737] (-) TimerEvent: {}
+[18.362089] (-) TimerEvent: {}
+[18.462440] (-) TimerEvent: {}
+[18.562702] (-) TimerEvent: {}
+[18.662939] (-) TimerEvent: {}
+[18.763211] (-) TimerEvent: {}
+[18.863551] (-) TimerEvent: {}
+[18.963817] (-) TimerEvent: {}
+[19.064163] (-) TimerEvent: {}
+[19.164634] (-) TimerEvent: {}
+[19.264965] (-) TimerEvent: {}
+[19.365347] (-) TimerEvent: {}
+[19.465684] (-) TimerEvent: {}
+[19.566011] (-) TimerEvent: {}
+[19.576558] (thruster_manager) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable publish_wrenches\x1b[0m\n'}
+[19.666135] (-) TimerEvent: {}
+[19.766490] (-) TimerEvent: {}
+[19.866798] (-) TimerEvent: {}
+[19.967168] (-) TimerEvent: {}
+[20.053400] (thruster_manager) StdoutLine: {'line': b'[100%] Built target publish_wrenches\n'}
+[20.059597] (thruster_manager) CommandEnded: {'returncode': 0}
+[20.067305] (-) TimerEvent: {}
+[20.072576] (thruster_manager) JobProgress: {'identifier': 'thruster_manager', 'progress': 'install'}
+[20.072716] (thruster_manager) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/kyo/ros2_ws/build/thruster_manager'], 'cwd': '/home/kyo/ros2_ws/build/thruster_manager', 'env': OrderedDict([('USER', 'kyo'), ('LC_TIME', 'id_ID.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('OLDPWD', '/home/kyo/ros2_ws/src'), ('HOME', '/home/kyo'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/kyo/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'id_ID.UTF-8'), ('SYSTEMD_EXEC_PID', '1500'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/kyo/.nvm'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kyo'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'kyo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kyo-Zenbook-UX5401ZAS-UX5401ZAS:@/tmp/.ICE-unix/1193,unix/kyo-Zenbook-UX5401ZAS-UX5401ZAS:/tmp/.ICE-unix/1193'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ded8edc5_3572_45f3_b793_bb73d592cba3'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.260'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NJSAN2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kyo/ros2_ws/build/thruster_manager'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('NVM_CD_FLAGS', '-q'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('NVM_RC_VERSION', ''), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[20.076548] (thruster_manager) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[20.076599] (thruster_manager) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/thruster_manager/share/thruster_manager/environment/library_path.sh\n'}
+[20.076682] (thruster_manager) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/thruster_manager/share/thruster_manager/environment/library_path.dsv\n'}
+[20.076762] (thruster_manager) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/thruster_manager/lib/thruster_manager/thruster_manager_node\n'}
+[20.076948] (thruster_manager) StdoutLine: {'line': b'-- Set runtime path of "/home/kyo/ros2_ws/install/thruster_manager/lib/thruster_manager/thruster_manager_node" to ""\n'}
+[20.076975] (thruster_manager) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/thruster_manager/lib/libthruster_manager.so\n'}
+[20.084568] (thruster_manager) StdoutLine: {'line': b'-- Set runtime path of "/home/kyo/ros2_ws/install/thruster_manager/lib/libthruster_manager.so" to ""\n'}
+[20.084643] (thruster_manager) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/thruster_manager/lib/thruster_manager/publish_wrenches\n'}
+[20.087491] (thruster_manager) StdoutLine: {'line': b'-- Set runtime path of "/home/kyo/ros2_ws/install/thruster_manager/lib/thruster_manager/publish_wrenches" to ""\n'}
+[20.087563] (thruster_manager) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/thruster_manager/include\n'}
+[20.087604] (thruster_manager) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/thruster_manager/include/thruster_manager\n'}
+[20.087629] (thruster_manager) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/thruster_manager/include/thruster_manager/thruster_manager.h\n'}
+[20.087689] (thruster_manager) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/thruster_manager/include/thruster_manager/thruster_link.h\n'}
+[20.087714] (thruster_manager) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/thruster_manager/include/thruster_manager/thruster_manager_node.h\n'}
+[20.087736] (thruster_manager) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/thruster_manager/include/thruster_manager/model_parser.h\n'}
+[20.087759] (thruster_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kyo/ros2_ws/install/thruster_manager/include/thruster_manager\n'}
+[20.087783] (thruster_manager) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/thruster_manager/include/thruster_manager/thruster_manager\n'}
+[20.087807] (thruster_manager) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/thruster_manager/include/thruster_manager/thruster_manager/thruster_manager.h\n'}
+[20.087830] (thruster_manager) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/thruster_manager/include/thruster_manager/thruster_manager/thruster_link.h\n'}
+[20.087856] (thruster_manager) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/thruster_manager/include/thruster_manager/thruster_manager/thruster_manager_node.h\n'}
+[20.087882] (thruster_manager) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/thruster_manager/include/thruster_manager/thruster_manager/model_parser.h\n'}
+[20.087909] (thruster_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kyo/ros2_ws/install/thruster_manager/share/thruster_manager/environment/library_path.sh\n'}
+[20.087933] (thruster_manager) StdoutLine: {'line': b'-- Up-to-date: /home/kyo/ros2_ws/install/thruster_manager/share/thruster_manager/environment/library_path.dsv\n'}
+[20.087991] (thruster_manager) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/thruster_manager/share/ament_index/resource_index/package_run_dependencies/thruster_manager\n'}
+[20.088021] (thruster_manager) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/thruster_manager/share/ament_index/resource_index/parent_prefix_path/thruster_manager\n'}
+[20.088047] (thruster_manager) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/thruster_manager/share/thruster_manager/environment/ament_prefix_path.sh\n'}
+[20.088072] (thruster_manager) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/thruster_manager/share/thruster_manager/environment/ament_prefix_path.dsv\n'}
+[20.088123] (thruster_manager) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/thruster_manager/share/thruster_manager/environment/path.sh\n'}
+[20.088151] (thruster_manager) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/thruster_manager/share/thruster_manager/environment/path.dsv\n'}
+[20.088177] (thruster_manager) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/thruster_manager/share/thruster_manager/local_setup.bash\n'}
+[20.088202] (thruster_manager) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/thruster_manager/share/thruster_manager/local_setup.sh\n'}
+[20.088228] (thruster_manager) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/thruster_manager/share/thruster_manager/local_setup.zsh\n'}
+[20.088267] (thruster_manager) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/thruster_manager/share/thruster_manager/local_setup.dsv\n'}
+[20.088293] (thruster_manager) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/thruster_manager/share/thruster_manager/package.dsv\n'}
+[20.088316] (thruster_manager) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/thruster_manager/share/ament_index/resource_index/packages/thruster_manager\n'}
+[20.088340] (thruster_manager) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/thruster_manager/share/ament_index/resource_index/rclcpp_components/thruster_manager\n'}
+[20.088366] (thruster_manager) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/thruster_manager/share/thruster_manager/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[20.088419] (thruster_manager) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/thruster_manager/share/thruster_manager/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[20.088444] (thruster_manager) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/thruster_manager/share/thruster_manager/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[20.088465] (thruster_manager) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/thruster_manager/share/thruster_manager/cmake/thruster_managerConfig.cmake\n'}
+[20.088487] (thruster_manager) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/thruster_manager/share/thruster_manager/cmake/thruster_managerConfig-version.cmake\n'}
+[20.088508] (thruster_manager) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/thruster_manager/share/thruster_manager/package.xml\n'}
+[20.089746] (thruster_manager) CommandEnded: {'returncode': 0}
+[20.109179] (thruster_manager) JobEnded: {'identifier': 'thruster_manager', 'rc': 0}
+[20.109496] (auv_control) JobStarted: {'identifier': 'auv_control'}
+[20.112866] (auv_control) JobProgress: {'identifier': 'auv_control', 'progress': 'cmake'}
+[20.112915] (auv_control) Command: {'cmd': ['/usr/bin/cmake', '/home/kyo/ros2_ws/src/auv_control', '-DCMAKE_INSTALL_PREFIX=/home/kyo/ros2_ws/install/auv_control'], 'cwd': '/home/kyo/ros2_ws/build/auv_control', 'env': OrderedDict([('USER', 'kyo'), ('LC_TIME', 'id_ID.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/kyo/ros2_ws/install/thruster_manager/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('OLDPWD', '/home/kyo/ros2_ws/src'), ('HOME', '/home/kyo'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/kyo/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'id_ID.UTF-8'), ('SYSTEMD_EXEC_PID', '1500'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/kyo/.nvm'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kyo'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'kyo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kyo-Zenbook-UX5401ZAS-UX5401ZAS:@/tmp/.ICE-unix/1193,unix/kyo-Zenbook-UX5401ZAS-UX5401ZAS:/tmp/.ICE-unix/1193'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ded8edc5_3572_45f3_b793_bb73d592cba3'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.260'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NJSAN2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/home/kyo/ros2_ws/install/thruster_manager:/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kyo/ros2_ws/build/auv_control'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('NVM_CD_FLAGS', '-q'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('NVM_RC_VERSION', ''), ('CMAKE_PREFIX_PATH', '/home/kyo/ros2_ws/install/thruster_manager:/opt/ros/humble')]), 'shell': False}
+[20.141666] (auv_control) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[20.167511] (-) TimerEvent: {}
+[20.168580] (auv_control) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[20.172712] (auv_control) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[20.211224] (auv_control) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[20.215846] (auv_control) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[20.216066] (auv_control) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[20.216281] (auv_control) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[20.217951] (auv_control) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[20.258322] (auv_control) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[20.262100] (auv_control) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[20.262175] (auv_control) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[20.262375] (auv_control) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[20.263607] (auv_control) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[20.267609] (-) TimerEvent: {}
+[20.338485] (auv_control) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[20.367788] (-) TimerEvent: {}
+[20.385902] (auv_control) StdoutLine: {'line': b'-- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[20.405816] (auv_control) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[20.407990] (auv_control) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[20.412107] (auv_control) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[20.418589] (auv_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[20.427788] (auv_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[20.462594] (auv_control) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[20.463752] (auv_control) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[20.467886] (-) TimerEvent: {}
+[20.509085] (auv_control) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[20.523314] (auv_control) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[20.547156] (auv_control) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[20.551400] (auv_control) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[20.568072] (-) TimerEvent: {}
+[20.586613] (auv_control) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[20.586760] (auv_control) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[20.625734] (auv_control) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[20.626449] (auv_control) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[20.668242] (-) TimerEvent: {}
+[20.712634] (auv_control) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[20.737527] (auv_control) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[20.768420] (-) TimerEvent: {}
+[20.786428] (auv_control) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.3 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[20.835147] (auv_control) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.6 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[20.868595] (-) TimerEvent: {}
+[20.968833] (-) TimerEvent: {}
+[21.032573] (auv_control) StdoutLine: {'line': b'-- Found urdf: 2.6.0 (/opt/ros/humble/share/urdf/cmake)\n'}
+[21.046434] (auv_control) StdoutLine: {'line': b'-- Found thruster_manager: 0.1.0 (/home/kyo/ros2_ws/install/thruster_manager/share/thruster_manager/cmake)\n'}
+[21.068915] (-) TimerEvent: {}
+[21.077737] (auv_control) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[21.169096] (-) TimerEvent: {}
+[21.211351] (auv_control) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[21.269280] (-) TimerEvent: {}
+[21.363666] (auv_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[21.369456] (-) TimerEvent: {}
+[21.423172] (auv_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[21.434419] (auv_control) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[21.435048] (auv_control) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[21.448137] (auv_control) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[21.448208] (auv_control) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[21.448237] (auv_control) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[21.448262] (auv_control) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[21.458552] (auv_control) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[21.469629] (-) TimerEvent: {}
+[21.482217] (auv_control) StdoutLine: {'line': b'-- Configuring done\n'}
+[21.507895] (auv_control) StdoutLine: {'line': b'-- Generating done\n'}
+[21.509376] (auv_control) StdoutLine: {'line': b'-- Build files have been written to: /home/kyo/ros2_ws/build/auv_control\n'}
+[21.517154] (auv_control) CommandEnded: {'returncode': 0}
+[21.518301] (auv_control) JobProgress: {'identifier': 'auv_control', 'progress': 'build'}
+[21.518345] (auv_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/kyo/ros2_ws/build/auv_control', '--', '-j20', '-l20'], 'cwd': '/home/kyo/ros2_ws/build/auv_control', 'env': OrderedDict([('USER', 'kyo'), ('LC_TIME', 'id_ID.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/kyo/ros2_ws/install/thruster_manager/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('OLDPWD', '/home/kyo/ros2_ws/src'), ('HOME', '/home/kyo'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/kyo/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'id_ID.UTF-8'), ('SYSTEMD_EXEC_PID', '1500'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/kyo/.nvm'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kyo'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'kyo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kyo-Zenbook-UX5401ZAS-UX5401ZAS:@/tmp/.ICE-unix/1193,unix/kyo-Zenbook-UX5401ZAS-UX5401ZAS:/tmp/.ICE-unix/1193'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ded8edc5_3572_45f3_b793_bb73d592cba3'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.260'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NJSAN2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/home/kyo/ros2_ws/install/thruster_manager:/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kyo/ros2_ws/build/auv_control'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('NVM_CD_FLAGS', '-q'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('NVM_RC_VERSION', ''), ('CMAKE_PREFIX_PATH', '/home/kyo/ros2_ws/install/thruster_manager:/opt/ros/humble')]), 'shell': False}
+[21.539621] (auv_control) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[21.544369] (auv_control) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[21.548601] (auv_control) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_copy_auv_control\n'}
+[21.569842] (-) TimerEvent: {}
+[21.670195] (-) TimerEvent: {}
+[21.699034] (auv_control) StdoutLine: {'line': b'running egg_info\n'}
+[21.699462] (auv_control) StdoutLine: {'line': b'creating auv_control.egg-info\n'}
+[21.699620] (auv_control) StdoutLine: {'line': b'writing auv_control.egg-info/PKG-INFO\n'}
+[21.699818] (auv_control) StdoutLine: {'line': b'writing dependency_links to auv_control.egg-info/dependency_links.txt\n'}
+[21.699932] (auv_control) StdoutLine: {'line': b'writing top-level names to auv_control.egg-info/top_level.txt\n'}
+[21.700027] (auv_control) StdoutLine: {'line': b"writing manifest file 'auv_control.egg-info/SOURCES.txt'\n"}
+[21.701328] (auv_control) StdoutLine: {'line': b"reading manifest file 'auv_control.egg-info/SOURCES.txt'\n"}
+[21.701564] (auv_control) StdoutLine: {'line': b"writing manifest file 'auv_control.egg-info/SOURCES.txt'\n"}
+[21.718820] (auv_control) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_build_auv_control_egg\n'}
+[21.728045] (auv_control) StdoutLine: {'line': b'[  5%] Built target auv_control__cpp\n'}
+[21.728987] (auv_control) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/auv_control__rosidl_generator_c.dir/rosidl_generator_c/auv_control/srv/detail/control__functions.c.o\x1b[0m\n'}
+[21.733723] (auv_control) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[21.733912] (auv_control) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[21.734139] (auv_control) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[21.768456] (auv_control) StdoutLine: {'line': b'[ 17%] \x1b[32m\x1b[1mLinking C shared library libauv_control__rosidl_generator_c.so\x1b[0m\n'}
+[21.770414] (-) TimerEvent: {}
+[21.793494] (auv_control) StdoutLine: {'line': b'[ 17%] Built target auv_control__rosidl_generator_c\n'}
+[21.799609] (auv_control) StdoutLine: {'line': b'[ 20%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[21.799898] (auv_control) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[21.800102] (auv_control) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[21.870654] (-) TimerEvent: {}
+[21.932706] (auv_control) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/auv_control__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/auv_control/srv/control__type_support.cpp.o\x1b[0m\n'}
+[21.951691] (auv_control) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/auv_control__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/auv_control/srv/detail/control__type_support.cpp.o\x1b[0m\n'}
+[21.962364] (auv_control) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/auv_control__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/auv_control/srv/detail/dds_fastrtps/control__type_support.cpp.o\x1b[0m\n'}
+[21.970822] (-) TimerEvent: {}
+[22.017620] (auv_control) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/auv_control__rosidl_typesupport_c.dir/rosidl_typesupport_c/auv_control/srv/control__type_support.cpp.o\x1b[0m\n'}
+[22.043478] (auv_control) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/auv_control__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/auv_control/srv/detail/control__type_support_c.cpp.o\x1b[0m\n'}
+[22.048043] (auv_control) StdoutLine: {'line': b'[ 41%] \x1b[32m\x1b[1mLinking CXX shared library libauv_control__rosidl_typesupport_c.so\x1b[0m\n'}
+[22.048273] (auv_control) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding C object CMakeFiles/auv_control__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/auv_control/srv/detail/control__type_support.c.o\x1b[0m\n'}
+[22.070941] (-) TimerEvent: {}
+[22.075530] (auv_control) StdoutLine: {'line': b'[ 46%] \x1b[32m\x1b[1mLinking C shared library libauv_control__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[22.080826] (auv_control) StdoutLine: {'line': b'[ 46%] Built target auv_control__rosidl_typesupport_c\n'}
+[22.098577] (auv_control) StdoutLine: {'line': b'[ 46%] Built target auv_control__rosidl_typesupport_introspection_c\n'}
+[22.151137] (auv_control) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX shared library libauv_control__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[22.171052] (-) TimerEvent: {}
+[22.179390] (auv_control) StdoutLine: {'line': b'[ 48%] Built target auv_control__rosidl_typesupport_cpp\n'}
+[22.193107] (auv_control) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/control_common.dir/src/hydrodynamics.cpp.o\x1b[0m\n'}
+[22.193309] (auv_control) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/control_common.dir/src/controller_io.cpp.o\x1b[0m\n'}
+[22.235590] (auv_control) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking CXX shared library libauv_control__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[22.266688] (auv_control) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX shared library libauv_control__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[22.267119] (auv_control) StdoutLine: {'line': b'[ 58%] Built target auv_control__rosidl_typesupport_introspection_cpp\n'}
+[22.271145] (-) TimerEvent: {}
+[22.292717] (auv_control) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libauv_control__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[22.324593] (auv_control) StdoutLine: {'line': b'[ 61%] Built target auv_control__rosidl_typesupport_fastrtps_cpp\n'}
+[22.348245] (auv_control) StdoutLine: {'line': b'[ 61%] Built target auv_control__rosidl_typesupport_fastrtps_c\n'}
+[22.360788] (auv_control) StdoutLine: {'line': b'[ 61%] Built target auv_control\n'}
+[22.371281] (-) TimerEvent: {}
+[22.372217] (auv_control) StdoutLine: {'line': b'[ 64%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[22.471509] (-) TimerEvent: {}
+[22.571935] (-) TimerEvent: {}
+[22.663746] (auv_control) StdoutLine: {'line': b'[ 64%] Built target auv_control__py\n'}
+[22.672221] (-) TimerEvent: {}
+[22.678701] (auv_control) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding C object CMakeFiles/auv_control__rosidl_generator_py.dir/rosidl_generator_py/auv_control/srv/_control_s.c.o\x1b[0m\n'}
+[22.751104] (auv_control) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/auv_control/libauv_control__rosidl_generator_py.so\x1b[0m\n'}
+[22.772459] (-) TimerEvent: {}
+[22.778796] (auv_control) StdoutLine: {'line': b'[ 69%] Built target auv_control__rosidl_generator_py\n'}
+[22.791787] (auv_control) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding C object CMakeFiles/auv_control__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/auv_control/_auv_control_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[22.791978] (auv_control) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding C object CMakeFiles/auv_control__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/auv_control/_auv_control_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[22.792070] (auv_control) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding C object CMakeFiles/auv_control__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/auv_control/_auv_control_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[22.865482] (auv_control) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/auv_control/auv_control_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[22.867228] (auv_control) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/auv_control/auv_control_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[22.867441] (auv_control) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/auv_control/auv_control_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[22.872691] (-) TimerEvent: {}
+[22.891616] (auv_control) StdoutLine: {'line': b'[ 84%] Built target auv_control__rosidl_typesupport_c__pyext\n'}
+[22.893149] (auv_control) StdoutLine: {'line': b'[ 84%] Built target auv_control__rosidl_typesupport_introspection_c__pyext\n'}
+[22.893267] (auv_control) StdoutLine: {'line': b'[ 84%] Built target auv_control__rosidl_typesupport_fastrtps_c__pyext\n'}
+[22.972887] (-) TimerEvent: {}
+[23.073231] (-) TimerEvent: {}
+[23.173558] (-) TimerEvent: {}
+[23.273895] (-) TimerEvent: {}
+[23.374228] (-) TimerEvent: {}
+[23.474559] (-) TimerEvent: {}
+[23.574827] (-) TimerEvent: {}
+[23.675162] (-) TimerEvent: {}
+[23.775520] (-) TimerEvent: {}
+[23.875863] (-) TimerEvent: {}
+[23.976210] (-) TimerEvent: {}
+[24.076549] (-) TimerEvent: {}
+[24.176885] (-) TimerEvent: {}
+[24.277216] (-) TimerEvent: {}
+[24.377543] (-) TimerEvent: {}
+[24.477881] (-) TimerEvent: {}
+[24.578225] (-) TimerEvent: {}
+[24.678564] (-) TimerEvent: {}
+[24.778818] (-) TimerEvent: {}
+[24.879056] (-) TimerEvent: {}
+[24.979397] (-) TimerEvent: {}
+[25.079753] (-) TimerEvent: {}
+[25.180098] (-) TimerEvent: {}
+[25.280454] (-) TimerEvent: {}
+[25.380809] (-) TimerEvent: {}
+[25.481167] (-) TimerEvent: {}
+[25.581513] (-) TimerEvent: {}
+[25.681876] (-) TimerEvent: {}
+[25.782222] (-) TimerEvent: {}
+[25.882566] (-) TimerEvent: {}
+[25.982819] (-) TimerEvent: {}
+[26.083087] (-) TimerEvent: {}
+[26.183431] (-) TimerEvent: {}
+[26.283794] (-) TimerEvent: {}
+[26.384142] (-) TimerEvent: {}
+[26.484480] (-) TimerEvent: {}
+[26.584827] (-) TimerEvent: {}
+[26.685168] (-) TimerEvent: {}
+[26.785514] (-) TimerEvent: {}
+[26.885861] (-) TimerEvent: {}
+[26.986200] (-) TimerEvent: {}
+[27.086543] (-) TimerEvent: {}
+[27.186790] (-) TimerEvent: {}
+[27.287034] (-) TimerEvent: {}
+[27.387374] (-) TimerEvent: {}
+[27.487715] (-) TimerEvent: {}
+[27.588052] (-) TimerEvent: {}
+[27.688388] (-) TimerEvent: {}
+[27.788723] (-) TimerEvent: {}
+[27.889060] (-) TimerEvent: {}
+[27.989426] (-) TimerEvent: {}
+[28.089770] (-) TimerEvent: {}
+[28.190112] (-) TimerEvent: {}
+[28.290455] (-) TimerEvent: {}
+[28.390783] (-) TimerEvent: {}
+[28.491024] (-) TimerEvent: {}
+[28.591373] (-) TimerEvent: {}
+[28.691715] (-) TimerEvent: {}
+[28.792055] (-) TimerEvent: {}
+[28.892402] (-) TimerEvent: {}
+[28.992749] (-) TimerEvent: {}
+[29.093072] (-) TimerEvent: {}
+[29.193400] (-) TimerEvent: {}
+[29.293731] (-) TimerEvent: {}
+[29.394052] (-) TimerEvent: {}
+[29.494389] (-) TimerEvent: {}
+[29.594739] (-) TimerEvent: {}
+[29.695082] (-) TimerEvent: {}
+[29.795411] (-) TimerEvent: {}
+[29.895736] (-) TimerEvent: {}
+[29.996067] (-) TimerEvent: {}
+[30.096403] (-) TimerEvent: {}
+[30.196723] (-) TimerEvent: {}
+[30.297048] (-) TimerEvent: {}
+[30.397385] (-) TimerEvent: {}
+[30.497716] (-) TimerEvent: {}
+[30.598043] (-) TimerEvent: {}
+[30.698373] (-) TimerEvent: {}
+[30.798733] (-) TimerEvent: {}
+[30.899098] (-) TimerEvent: {}
+[30.999462] (-) TimerEvent: {}
+[31.099780] (-) TimerEvent: {}
+[31.200244] (-) TimerEvent: {}
+[31.300775] (-) TimerEvent: {}
+[31.401139] (-) TimerEvent: {}
+[31.501537] (-) TimerEvent: {}
+[31.601900] (-) TimerEvent: {}
+[31.702186] (-) TimerEvent: {}
+[31.802539] (-) TimerEvent: {}
+[31.902792] (-) TimerEvent: {}
+[32.003030] (-) TimerEvent: {}
+[32.103298] (-) TimerEvent: {}
+[32.203637] (-) TimerEvent: {}
+[32.303981] (-) TimerEvent: {}
+[32.404260] (-) TimerEvent: {}
+[32.504620] (-) TimerEvent: {}
+[32.604942] (-) TimerEvent: {}
+[32.705173] (-) TimerEvent: {}
+[32.805502] (-) TimerEvent: {}
+[32.905829] (-) TimerEvent: {}
+[33.006154] (-) TimerEvent: {}
+[33.106386] (-) TimerEvent: {}
+[33.206728] (-) TimerEvent: {}
+[33.306957] (-) TimerEvent: {}
+[33.407218] (-) TimerEvent: {}
+[33.507550] (-) TimerEvent: {}
+[33.607874] (-) TimerEvent: {}
+[33.708206] (-) TimerEvent: {}
+[33.808434] (-) TimerEvent: {}
+[33.908759] (-) TimerEvent: {}
+[34.009085] (-) TimerEvent: {}
+[34.109359] (-) TimerEvent: {}
+[34.209696] (-) TimerEvent: {}
+[34.309994] (-) TimerEvent: {}
+[34.410315] (-) TimerEvent: {}
+[34.510590] (-) TimerEvent: {}
+[34.610830] (-) TimerEvent: {}
+[34.711090] (-) TimerEvent: {}
+[34.811477] (-) TimerEvent: {}
+[34.911808] (-) TimerEvent: {}
+[35.012180] (-) TimerEvent: {}
+[35.112529] (-) TimerEvent: {}
+[35.212871] (-) TimerEvent: {}
+[35.271888] (auv_control) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking CXX shared library libcontrol_common.so\x1b[0m\n'}
+[35.313099] (-) TimerEvent: {}
+[35.413435] (-) TimerEvent: {}
+[35.513777] (-) TimerEvent: {}
+[35.614116] (-) TimerEvent: {}
+[35.714460] (-) TimerEvent: {}
+[35.814785] (-) TimerEvent: {}
+[35.915068] (-) TimerEvent: {}
+[36.015342] (-) TimerEvent: {}
+[36.115679] (-) TimerEvent: {}
+[36.216025] (-) TimerEvent: {}
+[36.224393] (auv_control) StdoutLine: {'line': b'[ 87%] Built target control_common\n'}
+[36.236242] (auv_control) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding CXX object CMakeFiles/cascaded_pid.dir/src/pos_vel_pid.cpp.o\x1b[0m\n'}
+[36.236362] (auv_control) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding CXX object CMakeFiles/cascaded_pid.dir/src/cascaded_pid.cpp.o\x1b[0m\n'}
+[36.236403] (auv_control) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding CXX object CMakeFiles/sliding_mode.dir/src/sliding_mode.cpp.o\x1b[0m\n'}
+[36.316219] (-) TimerEvent: {}
+[36.416569] (-) TimerEvent: {}
+[36.516928] (-) TimerEvent: {}
+[36.617308] (-) TimerEvent: {}
+[36.717684] (-) TimerEvent: {}
+[36.818058] (-) TimerEvent: {}
+[36.918431] (-) TimerEvent: {}
+[37.018792] (-) TimerEvent: {}
+[37.119178] (-) TimerEvent: {}
+[37.219547] (-) TimerEvent: {}
+[37.319916] (-) TimerEvent: {}
+[37.420288] (-) TimerEvent: {}
+[37.520648] (-) TimerEvent: {}
+[37.621022] (-) TimerEvent: {}
+[37.721381] (-) TimerEvent: {}
+[37.821751] (-) TimerEvent: {}
+[37.922128] (-) TimerEvent: {}
+[38.022490] (-) TimerEvent: {}
+[38.122870] (-) TimerEvent: {}
+[38.223239] (-) TimerEvent: {}
+[38.323601] (-) TimerEvent: {}
+[38.423970] (-) TimerEvent: {}
+[38.524336] (-) TimerEvent: {}
+[38.624695] (-) TimerEvent: {}
+[38.725070] (-) TimerEvent: {}
+[38.825440] (-) TimerEvent: {}
+[38.925808] (-) TimerEvent: {}
+[39.026173] (-) TimerEvent: {}
+[39.126547] (-) TimerEvent: {}
+[39.226809] (-) TimerEvent: {}
+[39.327182] (-) TimerEvent: {}
+[39.427554] (-) TimerEvent: {}
+[39.527914] (-) TimerEvent: {}
+[39.628286] (-) TimerEvent: {}
+[39.728649] (-) TimerEvent: {}
+[39.829038] (-) TimerEvent: {}
+[39.929408] (-) TimerEvent: {}
+[40.029730] (-) TimerEvent: {}
+[40.079858] (auv_control) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking CXX executable sliding_mode\x1b[0m\n'}
+[40.111638] (auv_control) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable cascaded_pid\x1b[0m\n'}
+[40.129925] (-) TimerEvent: {}
+[40.230282] (-) TimerEvent: {}
+[40.330675] (-) TimerEvent: {}
+[40.430956] (-) TimerEvent: {}
+[40.531273] (-) TimerEvent: {}
+[40.630642] (auv_control) StdoutLine: {'line': b'[100%] Built target sliding_mode\n'}
+[40.631440] (-) TimerEvent: {}
+[40.727733] (auv_control) StdoutLine: {'line': b'[100%] Built target cascaded_pid\n'}
+[40.731613] (-) TimerEvent: {}
+[40.736747] (auv_control) CommandEnded: {'returncode': 0}
+[40.781390] (auv_control) JobProgress: {'identifier': 'auv_control', 'progress': 'install'}
+[40.782111] (auv_control) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/kyo/ros2_ws/build/auv_control'], 'cwd': '/home/kyo/ros2_ws/build/auv_control', 'env': OrderedDict([('USER', 'kyo'), ('LC_TIME', 'id_ID.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/kyo/ros2_ws/install/thruster_manager/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('OLDPWD', '/home/kyo/ros2_ws/src'), ('HOME', '/home/kyo'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/kyo/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'id_ID.UTF-8'), ('SYSTEMD_EXEC_PID', '1500'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/kyo/.nvm'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kyo'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'kyo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kyo-Zenbook-UX5401ZAS-UX5401ZAS:@/tmp/.ICE-unix/1193,unix/kyo-Zenbook-UX5401ZAS-UX5401ZAS:/tmp/.ICE-unix/1193'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ded8edc5_3572_45f3_b793_bb73d592cba3'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.260'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NJSAN2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/home/kyo/ros2_ws/install/thruster_manager:/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kyo/ros2_ws/build/auv_control'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('NVM_CD_FLAGS', '-q'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('NVM_RC_VERSION', ''), ('CMAKE_PREFIX_PATH', '/home/kyo/ros2_ws/install/thruster_manager:/opt/ros/humble')]), 'shell': False}
+[40.788091] (auv_control) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[40.788177] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/ament_index/resource_index/rosidl_interfaces/auv_control\n'}
+[40.788376] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/include/auv_control/auv_control\n'}
+[40.788615] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/include/auv_control/auv_control/msg\n'}
+[40.788692] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/include/auv_control/auv_control/msg/rosidl_generator_c__visibility_control.h\n'}
+[40.788739] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/include/auv_control/auv_control/srv\n'}
+[40.788791] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/include/auv_control/auv_control/srv/control.h\n'}
+[40.788830] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/include/auv_control/auv_control/srv/detail\n'}
+[40.788868] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/include/auv_control/auv_control/srv/detail/control__functions.h\n'}
+[40.788948] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/include/auv_control/auv_control/srv/detail/control__functions.c\n'}
+[40.788988] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/include/auv_control/auv_control/srv/detail/control__struct.h\n'}
+[40.789065] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/include/auv_control/auv_control/srv/detail/control__type_support.h\n'}
+[40.789113] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/environment/library_path.sh\n'}
+[40.789154] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/environment/library_path.dsv\n'}
+[40.789195] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/lib/libauv_control__rosidl_generator_c.so\n'}
+[40.789233] (auv_control) StdoutLine: {'line': b'-- Set runtime path of "/home/kyo/ros2_ws/install/auv_control/lib/libauv_control__rosidl_generator_c.so" to ""\n'}
+[40.789274] (auv_control) StdoutLine: {'line': b'-- Up-to-date: /home/kyo/ros2_ws/install/auv_control/include/auv_control/auv_control\n'}
+[40.789330] (auv_control) StdoutLine: {'line': b'-- Up-to-date: /home/kyo/ros2_ws/install/auv_control/include/auv_control/auv_control/msg\n'}
+[40.789397] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/include/auv_control/auv_control/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[40.789440] (auv_control) StdoutLine: {'line': b'-- Up-to-date: /home/kyo/ros2_ws/install/auv_control/include/auv_control/auv_control/srv\n'}
+[40.789481] (auv_control) StdoutLine: {'line': b'-- Up-to-date: /home/kyo/ros2_ws/install/auv_control/include/auv_control/auv_control/srv/detail\n'}
+[40.789520] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/include/auv_control/auv_control/srv/detail/control__rosidl_typesupport_fastrtps_c.h\n'}
+[40.789561] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/lib/libauv_control__rosidl_typesupport_fastrtps_c.so\n'}
+[40.789615] (auv_control) StdoutLine: {'line': b'-- Set runtime path of "/home/kyo/ros2_ws/install/auv_control/lib/libauv_control__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[40.789690] (auv_control) StdoutLine: {'line': b'-- Up-to-date: /home/kyo/ros2_ws/install/auv_control/include/auv_control/auv_control\n'}
+[40.789733] (auv_control) StdoutLine: {'line': b'-- Up-to-date: /home/kyo/ros2_ws/install/auv_control/include/auv_control/auv_control/srv\n'}
+[40.789774] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/include/auv_control/auv_control/srv/control.hpp\n'}
+[40.789813] (auv_control) StdoutLine: {'line': b'-- Up-to-date: /home/kyo/ros2_ws/install/auv_control/include/auv_control/auv_control/srv/detail\n'}
+[40.789851] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/include/auv_control/auv_control/srv/detail/control__traits.hpp\n'}
+[40.789889] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/include/auv_control/auv_control/srv/detail/control__struct.hpp\n'}
+[40.789927] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/include/auv_control/auv_control/srv/detail/control__builder.hpp\n'}
+[40.789981] (auv_control) StdoutLine: {'line': b'-- Up-to-date: /home/kyo/ros2_ws/install/auv_control/include/auv_control/auv_control\n'}
+[40.790051] (auv_control) StdoutLine: {'line': b'-- Up-to-date: /home/kyo/ros2_ws/install/auv_control/include/auv_control/auv_control/msg\n'}
+[40.790089] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/include/auv_control/auv_control/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[40.790148] (auv_control) StdoutLine: {'line': b'-- Up-to-date: /home/kyo/ros2_ws/install/auv_control/include/auv_control/auv_control/srv\n'}
+[40.790212] (auv_control) StdoutLine: {'line': b'-- Up-to-date: /home/kyo/ros2_ws/install/auv_control/include/auv_control/auv_control/srv/detail\n'}
+[40.790252] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/include/auv_control/auv_control/srv/detail/dds_fastrtps\n'}
+[40.790348] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/include/auv_control/auv_control/srv/detail/control__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[40.790392] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/lib/libauv_control__rosidl_typesupport_fastrtps_cpp.so\n'}
+[40.790452] (auv_control) StdoutLine: {'line': b'-- Set runtime path of "/home/kyo/ros2_ws/install/auv_control/lib/libauv_control__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[40.790490] (auv_control) StdoutLine: {'line': b'-- Up-to-date: /home/kyo/ros2_ws/install/auv_control/include/auv_control/auv_control\n'}
+[40.790528] (auv_control) StdoutLine: {'line': b'-- Up-to-date: /home/kyo/ros2_ws/install/auv_control/include/auv_control/auv_control/msg\n'}
+[40.790568] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/include/auv_control/auv_control/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[40.790608] (auv_control) StdoutLine: {'line': b'-- Up-to-date: /home/kyo/ros2_ws/install/auv_control/include/auv_control/auv_control/srv\n'}
+[40.790656] (auv_control) StdoutLine: {'line': b'-- Up-to-date: /home/kyo/ros2_ws/install/auv_control/include/auv_control/auv_control/srv/detail\n'}
+[40.790696] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/include/auv_control/auv_control/srv/detail/control__type_support.c\n'}
+[40.790734] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/include/auv_control/auv_control/srv/detail/control__rosidl_typesupport_introspection_c.h\n'}
+[40.790774] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/lib/libauv_control__rosidl_typesupport_introspection_c.so\n'}
+[40.790830] (auv_control) StdoutLine: {'line': b'-- Set runtime path of "/home/kyo/ros2_ws/install/auv_control/lib/libauv_control__rosidl_typesupport_introspection_c.so" to ""\n'}
+[40.790903] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/lib/libauv_control__rosidl_typesupport_c.so\n'}
+[40.790941] (auv_control) StdoutLine: {'line': b'-- Set runtime path of "/home/kyo/ros2_ws/install/auv_control/lib/libauv_control__rosidl_typesupport_c.so" to ""\n'}
+[40.790978] (auv_control) StdoutLine: {'line': b'-- Up-to-date: /home/kyo/ros2_ws/install/auv_control/include/auv_control/auv_control\n'}
+[40.791014] (auv_control) StdoutLine: {'line': b'-- Up-to-date: /home/kyo/ros2_ws/install/auv_control/include/auv_control/auv_control/srv\n'}
+[40.791050] (auv_control) StdoutLine: {'line': b'-- Up-to-date: /home/kyo/ros2_ws/install/auv_control/include/auv_control/auv_control/srv/detail\n'}
+[40.791088] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/include/auv_control/auv_control/srv/detail/control__rosidl_typesupport_introspection_cpp.hpp\n'}
+[40.791128] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/include/auv_control/auv_control/srv/detail/control__type_support.cpp\n'}
+[40.791165] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/lib/libauv_control__rosidl_typesupport_introspection_cpp.so\n'}
+[40.791219] (auv_control) StdoutLine: {'line': b'-- Set runtime path of "/home/kyo/ros2_ws/install/auv_control/lib/libauv_control__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[40.791286] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/lib/libauv_control__rosidl_typesupport_cpp.so\n'}
+[40.791329] (auv_control) StdoutLine: {'line': b'-- Set runtime path of "/home/kyo/ros2_ws/install/auv_control/lib/libauv_control__rosidl_typesupport_cpp.so" to ""\n'}
+[40.791382] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/environment/pythonpath.sh\n'}
+[40.791422] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/environment/pythonpath.dsv\n'}
+[40.791476] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/local/lib/python3.10/dist-packages/auv_control-0.0.1-py3.10.egg-info\n'}
+[40.791540] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/local/lib/python3.10/dist-packages/auv_control-0.0.1-py3.10.egg-info/dependency_links.txt\n'}
+[40.791592] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/local/lib/python3.10/dist-packages/auv_control-0.0.1-py3.10.egg-info/top_level.txt\n'}
+[40.791628] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/local/lib/python3.10/dist-packages/auv_control-0.0.1-py3.10.egg-info/SOURCES.txt\n'}
+[40.791668] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/local/lib/python3.10/dist-packages/auv_control-0.0.1-py3.10.egg-info/PKG-INFO\n'}
+[40.791722] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/local/lib/python3.10/dist-packages/auv_control\n'}
+[40.791787] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/local/lib/python3.10/dist-packages/auv_control/_auv_control_s.ep.rosidl_typesupport_c.c\n'}
+[40.791830] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/local/lib/python3.10/dist-packages/auv_control/libauv_control__rosidl_generator_py.so\n'}
+[40.791870] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/local/lib/python3.10/dist-packages/auv_control/auv_control_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[40.791932] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/local/lib/python3.10/dist-packages/auv_control/auv_control_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[40.791985] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/local/lib/python3.10/dist-packages/auv_control/_auv_control_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[40.792025] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/local/lib/python3.10/dist-packages/auv_control/_auv_control_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[40.792088] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/local/lib/python3.10/dist-packages/auv_control/srv\n'}
+[40.792129] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/local/lib/python3.10/dist-packages/auv_control/srv/_control_s.c\n'}
+[40.792169] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/local/lib/python3.10/dist-packages/auv_control/srv/_control.py\n'}
+[40.792229] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/local/lib/python3.10/dist-packages/auv_control/srv/__init__.py\n'}
+[40.792267] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/local/lib/python3.10/dist-packages/auv_control/auv_control_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[40.792304] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/local/lib/python3.10/dist-packages/auv_control/__init__.py\n'}
+[40.820149] (auv_control) StdoutLine: {'line': b"Listing '/home/kyo/ros2_ws/install/auv_control/local/lib/python3.10/dist-packages/auv_control'...\n"}
+[40.820264] (auv_control) StdoutLine: {'line': b"Compiling '/home/kyo/ros2_ws/install/auv_control/local/lib/python3.10/dist-packages/auv_control/__init__.py'...\n"}
+[40.820313] (auv_control) StdoutLine: {'line': b"Listing '/home/kyo/ros2_ws/install/auv_control/local/lib/python3.10/dist-packages/auv_control/srv'...\n"}
+[40.820361] (auv_control) StdoutLine: {'line': b"Compiling '/home/kyo/ros2_ws/install/auv_control/local/lib/python3.10/dist-packages/auv_control/srv/__init__.py'...\n"}
+[40.820400] (auv_control) StdoutLine: {'line': b"Compiling '/home/kyo/ros2_ws/install/auv_control/local/lib/python3.10/dist-packages/auv_control/srv/_control.py'...\n"}
+[40.824177] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/local/lib/python3.10/dist-packages/auv_control/auv_control_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[40.824280] (auv_control) StdoutLine: {'line': b'-- Set runtime path of "/home/kyo/ros2_ws/install/auv_control/local/lib/python3.10/dist-packages/auv_control/auv_control_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[40.824332] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/local/lib/python3.10/dist-packages/auv_control/auv_control_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[40.824508] (auv_control) StdoutLine: {'line': b'-- Set runtime path of "/home/kyo/ros2_ws/install/auv_control/local/lib/python3.10/dist-packages/auv_control/auv_control_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[40.824576] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/local/lib/python3.10/dist-packages/auv_control/auv_control_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[40.824729] (auv_control) StdoutLine: {'line': b'-- Set runtime path of "/home/kyo/ros2_ws/install/auv_control/local/lib/python3.10/dist-packages/auv_control/auv_control_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[40.824837] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/lib/libauv_control__rosidl_generator_py.so\n'}
+[40.824992] (auv_control) StdoutLine: {'line': b'-- Set runtime path of "/home/kyo/ros2_ws/install/auv_control/lib/libauv_control__rosidl_generator_py.so" to ""\n'}
+[40.825115] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/srv/Control.idl\n'}
+[40.825166] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/srv/Control.srv\n'}
+[40.825207] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/srv/Control_Request.msg\n'}
+[40.825248] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/srv/Control_Response.msg\n'}
+[40.825286] (auv_control) StdoutLine: {'line': b'-- Up-to-date: /home/kyo/ros2_ws/install/auv_control/share/auv_control/environment/library_path.sh\n'}
+[40.825324] (auv_control) StdoutLine: {'line': b'-- Up-to-date: /home/kyo/ros2_ws/install/auv_control/share/auv_control/environment/library_path.dsv\n'}
+[40.825361] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/lib/libcontrol_common.so\n'}
+[40.831780] (-) TimerEvent: {}
+[40.836486] (auv_control) StdoutLine: {'line': b'-- Set runtime path of "/home/kyo/ros2_ws/install/auv_control/lib/libcontrol_common.so" to ""\n'}
+[40.836600] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/lib/auv_control/cascaded_pid\n'}
+[40.836888] (auv_control) StdoutLine: {'line': b'-- Set runtime path of "/home/kyo/ros2_ws/install/auv_control/lib/auv_control/cascaded_pid" to ""\n'}
+[40.837023] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/lib/auv_control/sliding_mode\n'}
+[40.837344] (auv_control) StdoutLine: {'line': b'-- Set runtime path of "/home/kyo/ros2_ws/install/auv_control/lib/auv_control/sliding_mode" to ""\n'}
+[40.837447] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/launch\n'}
+[40.837666] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/launch/vel_setpoint.yaml\n'}
+[40.837722] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/launch/pose_setpoint.yaml\n'}
+[40.837766] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/launch/wrench_launch.py\n'}
+[40.837807] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/launch/wrench.yaml\n'}
+[40.837847] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/launch/pose_launch.py\n'}
+[40.837884] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/ament_index/resource_index/package_run_dependencies/auv_control\n'}
+[40.837924] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/ament_index/resource_index/parent_prefix_path/auv_control\n'}
+[40.837963] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/environment/ament_prefix_path.sh\n'}
+[40.838002] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/environment/ament_prefix_path.dsv\n'}
+[40.838040] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/environment/path.sh\n'}
+[40.838098] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/environment/path.dsv\n'}
+[40.838177] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/local_setup.bash\n'}
+[40.838224] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/local_setup.sh\n'}
+[40.838273] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/local_setup.zsh\n'}
+[40.838308] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/local_setup.dsv\n'}
+[40.838346] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/package.dsv\n'}
+[40.838384] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/ament_index/resource_index/packages/auv_control\n'}
+[40.838422] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/cmake/export_auv_control__rosidl_generator_cExport.cmake\n'}
+[40.838461] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/cmake/export_auv_control__rosidl_generator_cExport-noconfig.cmake\n'}
+[40.838499] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/cmake/export_auv_control__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[40.838536] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/cmake/export_auv_control__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[40.838591] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/cmake/export_auv_control__rosidl_generator_cppExport.cmake\n'}
+[40.838667] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/cmake/export_auv_control__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[40.838708] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/cmake/export_auv_control__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[40.838747] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/cmake/auv_control__rosidl_typesupport_introspection_cExport.cmake\n'}
+[40.838785] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/cmake/auv_control__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[40.838841] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/cmake/auv_control__rosidl_typesupport_cExport.cmake\n'}
+[40.838879] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/cmake/auv_control__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[40.838918] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/cmake/auv_control__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[40.839012] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/cmake/auv_control__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[40.839067] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/cmake/auv_control__rosidl_typesupport_cppExport.cmake\n'}
+[40.839108] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/cmake/auv_control__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[40.839164] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/cmake/export_auv_control__rosidl_generator_pyExport.cmake\n'}
+[40.839202] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/cmake/export_auv_control__rosidl_generator_pyExport-noconfig.cmake\n'}
+[40.839239] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/cmake/rosidl_cmake-extras.cmake\n'}
+[40.839303] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[40.839342] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[40.839380] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[40.839438] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[40.839485] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[40.839522] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[40.839580] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/cmake/auv_controlConfig.cmake\n'}
+[40.839618] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/cmake/auv_controlConfig-version.cmake\n'}
+[40.839671] (auv_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/auv_control/share/auv_control/package.xml\n'}
+[40.841423] (auv_control) CommandEnded: {'returncode': 0}
+[40.890591] (auv_control) JobEnded: {'identifier': 'auv_control', 'rc': 0}
+[40.891445] (bluerov2_control) JobStarted: {'identifier': 'bluerov2_control'}
+[40.898387] (bluerov2_control) JobProgress: {'identifier': 'bluerov2_control', 'progress': 'cmake'}
+[40.898505] (bluerov2_control) Command: {'cmd': ['/usr/bin/cmake', '/home/kyo/ros2_ws/src/bluerov2/bluerov2_control', '-DCMAKE_INSTALL_PREFIX=/home/kyo/ros2_ws/install/bluerov2_control'], 'cwd': '/home/kyo/ros2_ws/build/bluerov2_control', 'env': OrderedDict([('USER', 'kyo'), ('LC_TIME', 'id_ID.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/kyo/ros2_ws/install/auv_control/lib:/home/kyo/ros2_ws/install/thruster_manager/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('OLDPWD', '/home/kyo/ros2_ws/src'), ('HOME', '/home/kyo'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/kyo/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'id_ID.UTF-8'), ('SYSTEMD_EXEC_PID', '1500'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/kyo/.nvm'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kyo'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'kyo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kyo-Zenbook-UX5401ZAS-UX5401ZAS:@/tmp/.ICE-unix/1193,unix/kyo-Zenbook-UX5401ZAS-UX5401ZAS:/tmp/.ICE-unix/1193'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ded8edc5_3572_45f3_b793_bb73d592cba3'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.260'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NJSAN2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/home/kyo/ros2_ws/install/auv_control:/home/kyo/ros2_ws/install/thruster_manager:/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kyo/ros2_ws/build/bluerov2_control'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('NVM_CD_FLAGS', '-q'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('PYTHONPATH', '/home/kyo/ros2_ws/install/auv_control/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('NVM_RC_VERSION', ''), ('CMAKE_PREFIX_PATH', '/home/kyo/ros2_ws/install/auv_control:/home/kyo/ros2_ws/install/thruster_manager:/opt/ros/humble')]), 'shell': False}
+[40.931995] (-) TimerEvent: {}
+[40.940885] (bluerov2_control) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[40.985238] (bluerov2_control) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[40.990835] (bluerov2_control) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[41.032182] (-) TimerEvent: {}
+[41.039276] (bluerov2_control) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[41.045145] (bluerov2_control) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[41.045363] (bluerov2_control) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[41.045583] (bluerov2_control) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[41.048079] (bluerov2_control) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[41.106937] (bluerov2_control) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[41.112969] (bluerov2_control) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[41.113071] (bluerov2_control) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[41.113541] (bluerov2_control) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[41.114890] (bluerov2_control) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[41.132349] (-) TimerEvent: {}
+[41.230277] (bluerov2_control) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[41.232570] (-) TimerEvent: {}
+[41.332851] (-) TimerEvent: {}
+[41.341496] (bluerov2_control) StdoutLine: {'line': b'-- Configuring done\n'}
+[41.342849] (bluerov2_control) StdoutLine: {'line': b'-- Generating done\n'}
+[41.343411] (bluerov2_control) StdoutLine: {'line': b'-- Build files have been written to: /home/kyo/ros2_ws/build/bluerov2_control\n'}
+[41.346243] (bluerov2_control) CommandEnded: {'returncode': 0}
+[41.347407] (bluerov2_control) JobProgress: {'identifier': 'bluerov2_control', 'progress': 'build'}
+[41.347430] (bluerov2_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/kyo/ros2_ws/build/bluerov2_control', '--', '-j20', '-l20'], 'cwd': '/home/kyo/ros2_ws/build/bluerov2_control', 'env': OrderedDict([('USER', 'kyo'), ('LC_TIME', 'id_ID.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/kyo/ros2_ws/install/auv_control/lib:/home/kyo/ros2_ws/install/thruster_manager/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('OLDPWD', '/home/kyo/ros2_ws/src'), ('HOME', '/home/kyo'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/kyo/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'id_ID.UTF-8'), ('SYSTEMD_EXEC_PID', '1500'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/kyo/.nvm'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kyo'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'kyo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kyo-Zenbook-UX5401ZAS-UX5401ZAS:@/tmp/.ICE-unix/1193,unix/kyo-Zenbook-UX5401ZAS-UX5401ZAS:/tmp/.ICE-unix/1193'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ded8edc5_3572_45f3_b793_bb73d592cba3'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.260'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NJSAN2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/home/kyo/ros2_ws/install/auv_control:/home/kyo/ros2_ws/install/thruster_manager:/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kyo/ros2_ws/build/bluerov2_control'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('NVM_CD_FLAGS', '-q'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('PYTHONPATH', '/home/kyo/ros2_ws/install/auv_control/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('NVM_RC_VERSION', ''), ('CMAKE_PREFIX_PATH', '/home/kyo/ros2_ws/install/auv_control:/home/kyo/ros2_ws/install/thruster_manager:/opt/ros/humble')]), 'shell': False}
+[41.370093] (bluerov2_control) CommandEnded: {'returncode': 0}
+[41.383208] (bluerov2_control) JobProgress: {'identifier': 'bluerov2_control', 'progress': 'install'}
+[41.383472] (bluerov2_control) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/kyo/ros2_ws/build/bluerov2_control'], 'cwd': '/home/kyo/ros2_ws/build/bluerov2_control', 'env': OrderedDict([('USER', 'kyo'), ('LC_TIME', 'id_ID.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/kyo/ros2_ws/install/auv_control/lib:/home/kyo/ros2_ws/install/thruster_manager/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('OLDPWD', '/home/kyo/ros2_ws/src'), ('HOME', '/home/kyo'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/kyo/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'id_ID.UTF-8'), ('SYSTEMD_EXEC_PID', '1500'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/kyo/.nvm'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kyo'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'kyo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kyo-Zenbook-UX5401ZAS-UX5401ZAS:@/tmp/.ICE-unix/1193,unix/kyo-Zenbook-UX5401ZAS-UX5401ZAS:/tmp/.ICE-unix/1193'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ded8edc5_3572_45f3_b793_bb73d592cba3'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.260'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.NJSAN2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/home/kyo/ros2_ws/install/auv_control:/home/kyo/ros2_ws/install/thruster_manager:/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kyo/ros2_ws/build/bluerov2_control'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('NVM_CD_FLAGS', '-q'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('PYTHONPATH', '/home/kyo/ros2_ws/install/auv_control/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('NVM_RC_VERSION', ''), ('CMAKE_PREFIX_PATH', '/home/kyo/ros2_ws/install/auv_control:/home/kyo/ros2_ws/install/thruster_manager:/opt/ros/humble')]), 'shell': False}
+[41.390356] (bluerov2_control) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[41.390487] (bluerov2_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_control/share/bluerov2_control/launch\n'}
+[41.390573] (bluerov2_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_control/share/bluerov2_control/launch/cascaded_pids_launch.py\n'}
+[41.390630] (bluerov2_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_control/share/bluerov2_control/launch/rviz_launch.py\n'}
+[41.390681] (bluerov2_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_control/share/bluerov2_control/launch/wrench_launch.py\n'}
+[41.390755] (bluerov2_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_control/share/bluerov2_control/config\n'}
+[41.390803] (bluerov2_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_control/share/bluerov2_control/config/bluerov2.rviz\n'}
+[41.390889] (bluerov2_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_control/share/bluerov2_control/config/tilt.yaml\n'}
+[41.390939] (bluerov2_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_control/share/bluerov2_control/config/cascaded_pid.yaml\n'}
+[41.390985] (bluerov2_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_control/share/bluerov2_control/config/thruster_manager.yaml\n'}
+[41.391056] (bluerov2_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_control/share/bluerov2_control/config/manual.yaml\n'}
+[41.391100] (bluerov2_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_control/share/bluerov2_control/config/anchors.yaml\n'}
+[41.391169] (bluerov2_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_control/share/ament_index/resource_index/package_run_dependencies/bluerov2_control\n'}
+[41.391214] (bluerov2_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_control/share/ament_index/resource_index/parent_prefix_path/bluerov2_control\n'}
+[41.391296] (bluerov2_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_control/share/bluerov2_control/environment/ament_prefix_path.sh\n'}
+[41.391341] (bluerov2_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_control/share/bluerov2_control/environment/ament_prefix_path.dsv\n'}
+[41.391381] (bluerov2_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_control/share/bluerov2_control/environment/path.sh\n'}
+[41.391421] (bluerov2_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_control/share/bluerov2_control/environment/path.dsv\n'}
+[41.391500] (bluerov2_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_control/share/bluerov2_control/local_setup.bash\n'}
+[41.391542] (bluerov2_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_control/share/bluerov2_control/local_setup.sh\n'}
+[41.391583] (bluerov2_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_control/share/bluerov2_control/local_setup.zsh\n'}
+[41.391622] (bluerov2_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_control/share/bluerov2_control/local_setup.dsv\n'}
+[41.391685] (bluerov2_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_control/share/bluerov2_control/package.dsv\n'}
+[41.391765] (bluerov2_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_control/share/ament_index/resource_index/packages/bluerov2_control\n'}
+[41.391807] (bluerov2_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_control/share/bluerov2_control/cmake/bluerov2_controlConfig.cmake\n'}
+[41.391847] (bluerov2_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_control/share/bluerov2_control/cmake/bluerov2_controlConfig-version.cmake\n'}
+[41.391911] (bluerov2_control) StdoutLine: {'line': b'-- Installing: /home/kyo/ros2_ws/install/bluerov2_control/share/bluerov2_control/package.xml\n'}
+[41.393329] (bluerov2_control) CommandEnded: {'returncode': 0}
+[41.412917] (bluerov2_control) JobEnded: {'identifier': 'bluerov2_control', 'rc': 0}
+[41.413197] (-) EventReactorShutdown: {}

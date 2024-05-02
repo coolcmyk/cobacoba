@@ -1,0 +1,6 @@
+{
+  "package_name": "auv_control",
+  "non_idl_tuples": [
+    "/home/kyo/ros2_ws/src/auv_control:srv/Control.srv"
+  ]
+}

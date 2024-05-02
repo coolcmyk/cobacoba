@@ -1,0 +1,2 @@
+Invoking command in '/home/kyo/ros2_ws/src/build/bluerov2_control': /usr/bin/cmake /home/kyo/ros2_ws/src/bluerov2/bluerov2_control -DCMAKE_INSTALL_PREFIX=/home/kyo/ros2_ws/src/install/bluerov2_control
+Invoked command in '/home/kyo/ros2_ws/src/build/bluerov2_control' returned '1': /usr/bin/cmake /home/kyo/ros2_ws/src/bluerov2/bluerov2_control -DCMAKE_INSTALL_PREFIX=/home/kyo/ros2_ws/src/install/bluerov2_control
